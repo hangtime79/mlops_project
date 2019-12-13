@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576232684616
+    "lastModifiedOn": 1576232686943
   },
   "creationTag": {
     "versionNumber": 0,
@@ -130,7 +130,8 @@
       },
       {
         "name": "Country",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "Market_Segment",
