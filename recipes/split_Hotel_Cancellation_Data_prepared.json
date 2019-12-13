@@ -23,16 +23,20 @@
         {
           "ref": "entrar_al_hotel",
           "appendMode": false
+        },
+        {
+          "ref": "salida_del_hotel",
+          "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576233129952
+    "lastModifiedOn": 1576233184079
   },
   "creationTag": {
     "versionNumber": 0,

@@ -3,37 +3,44 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": -1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
   "rangeSetTime": false,
+  "column": "Dataset",
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "VALUES",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": 1
+    },
+    {
+      "outputIndex": 1,
+      "value": 2
     }
   ],
   "rangeSplits": [
@@ -89,6 +96,153 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "Dataset",
+                "type": "bigint"
+              },
+              {
+                "name": "Is_Canceled",
+                "type": "bigint"
+              },
+              {
+                "name": "Lead_Time",
+                "type": "bigint"
+              },
+              {
+                "name": "Booking_Date",
+                "type": "string"
+              },
+              {
+                "name": "Cancellation_Date",
+                "type": "string"
+              },
+              {
+                "name": "Planned_Arrival_Date",
+                "type": "string"
+              },
+              {
+                "name": "Planned_Departure_Date",
+                "type": "string"
+              },
+              {
+                "name": "Arrival_Date",
+                "type": "string"
+              },
+              {
+                "name": "Departure_Date",
+                "type": "string"
+              },
+              {
+                "name": "Stay_in_Weekend_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Week_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Adults",
+                "type": "bigint"
+              },
+              {
+                "name": "Children",
+                "type": "bigint"
+              },
+              {
+                "name": "Babies",
+                "type": "bigint"
+              },
+              {
+                "meaning": "Text",
+                "name": "Meal",
+                "type": "string"
+              },
+              {
+                "name": "Country",
+                "type": "string"
+              },
+              {
+                "name": "Market_Segment",
+                "type": "string"
+              },
+              {
+                "name": "Distribution_Channel",
+                "type": "string"
+              },
+              {
+                "name": "Is_Repeated_Guest",
+                "type": "bigint"
+              },
+              {
+                "name": "Previous_Cancellations",
+                "type": "bigint"
+              },
+              {
+                "name": "Previous_Completed_Stays",
+                "type": "bigint"
+              },
+              {
+                "name": "Reserved_Room_Type",
+                "type": "string"
+              },
+              {
+                "name": "Assigned_Room_Type",
+                "type": "string"
+              },
+              {
+                "name": "Booking_Changes",
+                "type": "bigint"
+              },
+              {
+                "name": "Deposit_Type",
+                "type": "string"
+              },
+              {
+                "name": "Agent",
+                "type": "string"
+              },
+              {
+                "name": "Company",
+                "type": "string"
+              },
+              {
+                "name": "Days_in_Waiting_List",
+                "type": "bigint"
+              },
+              {
+                "name": "Customer_Type",
+                "type": "string"
+              },
+              {
+                "name": "ADR",
+                "type": "double"
+              },
+              {
+                "name": "Parking_Spaces_Needed",
+                "type": "bigint"
+              },
+              {
+                "name": "Special_Request_Cnt",
+                "type": "bigint"
+              },
+              {
+                "name": "Reservation_Status",
+                "type": "string"
+              },
+              {
+                "name": "Reservation_Status_Date",
+                "type": "string"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
