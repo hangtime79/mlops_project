@@ -27,16 +27,24 @@
         {
           "ref": "salida_del_hotel",
           "appendMode": false
+        },
+        {
+          "ref": "entrar_al_hotel_2017",
+          "appendMode": false
+        },
+        {
+          "ref": "salida_del_hotel_2017",
+          "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576459760331
+    "lastModifiedOn": 1576460208067
   },
   "creationTag": {
     "versionNumber": 0,
