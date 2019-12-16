@@ -103,7 +103,7 @@
               "operator": "\u003d\u003d [number]"
             },
             {
-              "date": "2016-07-01",
+              "date": "2017-01-01",
               "input": "Booking_Date",
               "col": "Is_Canceled",
               "unit": "seconds",
@@ -349,7 +349,7 @@
               "operator": "\u003d\u003d [number]"
             },
             {
-              "date": "2016-07-01",
+              "date": "2017-01-01",
               "input": "Booking_Date",
               "col": "Is_Canceled",
               "unit": "seconds",
