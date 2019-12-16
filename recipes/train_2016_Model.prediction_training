@@ -55,7 +55,7 @@
     "algorithm": "RANDOM_FOREST_CLASSIFICATION",
     "gridLength": 2
   },
-  "generatingModelId": "A-HOTELCANCELLATIONMODELMONITORING-6R7ho0f1-Vp10AA6L-s1-pp1-m1",
+  "generatingModelId": "A-HOTELCANCELLATIONMODELMONITORING-6R7ho0f1-Vp10AA6L-s2-pp1-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -1437,13 +1437,9 @@
     "userModified": false
   },
   "script": {
+    "contextProjectKey": "HOTELCANCELLATIONMODELMONITORING",
     "columnsSelection": {
       "mode": "ALL"
-    },
-    "analysisColumnData": {
-      "Meal": {
-        "meaning": "Text"
-      }
     },
     "explorationSampling": {
       "_refreshTrigger": 0,
@@ -1468,20 +1464,25 @@
       "autoRefreshSample": false
     },
     "explorationFilters": [],
-    "sorting": [],
     "exploreUIParams": {},
-    "globalSearchQuery": "",
-    "coloring": {
-      "scheme": "MEANING_AND_STATUS",
-      "individualColumns": [],
-      "valueColoringMode": "HASH"
-    },
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "previewMode": "ALL_ROWS",
     "vizSampling": {
       "_refreshTrigger": 0,
       "autoRefreshSample": false
+    },
+    "analysisColumnData": {
+      "Meal": {
+        "meaning": "Text"
+      }
+    },
+    "sorting": [],
+    "globalSearchQuery": "",
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
     }
   },
   "core": {
@@ -1547,7 +1548,7 @@
   "partSource": "ACTIVE_VERSION",
   "envName": "Mainline27",
   "splitParams": {
-    "instanceIdRefresher": 0,
+    "instanceIdRefresher": 1,
     "ssdSeed": 1337,
     "nFolds": 5,
     "splitBeforePrepare": true,
