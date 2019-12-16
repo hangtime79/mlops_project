@@ -24,37 +24,6 @@
       "manageExposedElements": false,
       "manageAdditionalDashboardUsers": false
     },
-    "onBehalf": "aKQcxwm",
-    "id": "byB7vFO75KRIpV3W",
-    "key": "8aMuAK2Ebe69MG31E9bILINY9XRf0hYB",
-    "label": "Key for Web app Plugin skin(aKQcxwm)",
-    "createdOn": 1576462881866
-  },
-  {
-    "execSQLLike": false,
-    "localDatasets": [
-      {
-        "datasets": [],
-        "privileges": [
-          "READ_DATA",
-          "READ_METADATA",
-          "READ_SCHEMA"
-        ]
-      }
-    ],
-    "projectPrivileges": {
-      "admin": false,
-      "readProjectContent": true,
-      "writeProjectContent": false,
-      "exportDatasetsData": false,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false
-    },
     "onBehalf": "TLBNmcP",
     "id": "ZhIZWGUPXHJir1Hg",
     "key": "3lHy9ZilesLuPChi4r4HJYUewBxnvjrj",
