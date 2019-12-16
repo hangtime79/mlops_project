@@ -13,7 +13,7 @@
   },
   "guessPolicy": "ALGORITHMS",
   "splitParams": {
-    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ttPolicy": "EXPLICIT_FILTERING_TWO_DATASETS",
     "ssdSplitMode": "RANDOM",
     "splitBeforePrepare": true,
     "ssdSelection": {
@@ -37,6 +37,48 @@
     "ssdTrainingRatio": 0.8,
     "ssdSeed": 1337,
     "testOnLargerValues": true,
+    "eftdTrain": {
+      "datasetSmartName": "entar_2016_train",
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
+    "eftdTest": {
+      "datasetSmartName": "entar_2016_test",
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
     "kfold": false,
     "nFolds": 5,
     "instanceIdRefresher": 0,
