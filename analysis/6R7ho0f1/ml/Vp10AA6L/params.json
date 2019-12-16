@@ -86,7 +86,7 @@
   },
   "preprocessing": {
     "feature_selection_params": {
-      "method": "NONE",
+      "method": "LASSO",
       "random_forest_params": {
         "n_trees": 30,
         "depth": 10,
@@ -1266,7 +1266,7 @@
       "max_feature_prop": 0.3
     },
     "random_forest_classification": {
-      "enabled": true,
+      "enabled": false,
       "n_estimators": [
         100
       ],
@@ -1421,7 +1421,7 @@
       "leaf_size": 30
     },
     "logistic_regression": {
-      "enabled": false,
+      "enabled": true,
       "multi_class": "ovr",
       "l1": false,
       "l2": true,
@@ -1725,7 +1725,7 @@
         "pluginVersion": "1.0.0",
         "elementId": "model-lightgbm_classification",
         "name": "LightGBM Classification",
-        "enabled": true,
+        "enabled": false,
         "params": {
           "boosting_type": [
             "gbdt"
