@@ -1533,7 +1533,7 @@
       "min_std_dev": 0.001
     },
     "xgboost": {
-      "enabled": true,
+      "enabled": false,
       "max_depth": [
         1,
         2,
@@ -1794,7 +1794,7 @@
     "custom_mllib": [],
     "max_ensemble_nodes_serialized": 6000,
     "lars_params": {
-      "enabled": true,
+      "enabled": false,
       "max_features": 0,
       "K": 100
     }
@@ -1806,7 +1806,7 @@
   "backendType": "PY_MEMORY",
   "maxConcurrentModelTraining": 2,
   "envSelection": {
-    "envMode": "USE_BUILTIN_MODE"
+    "envMode": "INHERIT"
   },
   "containerSelection": {
     "containerMode": "INHERIT"
