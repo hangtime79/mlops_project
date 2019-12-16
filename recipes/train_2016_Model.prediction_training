@@ -59,7 +59,7 @@
     "algorithm": "RANDOM_FOREST_CLASSIFICATION",
     "gridLength": 12
   },
-  "generatingModelId": "A-HOTELCANCELLATIONMODELMONITORING-RGE0RptT-mzVgf0hh-s6-pp1-m1",
+  "generatingModelId": "A-HOTELCANCELLATIONMODELMONITORING-RGE0RptT-mzVgf0hh-s7-pp1-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -1439,13 +1439,9 @@
     "userModified": false
   },
   "script": {
+    "contextProjectKey": "HOTELCANCELLATIONMODELMONITORING",
     "columnsSelection": {
       "mode": "ALL"
-    },
-    "analysisColumnData": {
-      "Meal": {
-        "meaning": "Text"
-      }
     },
     "explorationSampling": {
       "_refreshTrigger": 0,
@@ -1470,20 +1466,25 @@
       "autoRefreshSample": false
     },
     "explorationFilters": [],
-    "sorting": [],
     "exploreUIParams": {},
-    "globalSearchQuery": "",
-    "coloring": {
-      "scheme": "MEANING_AND_STATUS",
-      "individualColumns": [],
-      "valueColoringMode": "HASH"
-    },
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "previewMode": "ALL_ROWS",
     "vizSampling": {
       "_refreshTrigger": 0,
       "autoRefreshSample": false
+    },
+    "analysisColumnData": {
+      "Meal": {
+        "meaning": "Text"
+      }
+    },
+    "sorting": [],
+    "globalSearchQuery": "",
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
     }
   },
   "core": {
@@ -1545,7 +1546,7 @@
     },
     "prediction_type": "BINARY_CLASSIFICATION"
   },
-  "operationMode": "TRAIN_KFOLD",
+  "operationMode": "TRAIN_SPLITTED_ONLY",
   "partSource": "ACTIVE_VERSION",
   "envName": "Mainline27",
   "splitParams": {
@@ -1576,7 +1577,7 @@
     },
     "ssdTrainingRatio": 0.8,
     "ttPolicy": "SPLIT_SINGLE_DATASET",
-    "kfold": true
+    "kfold": false
   },
   "sparkParams": {
     "pipelineAllowMerge": true,
