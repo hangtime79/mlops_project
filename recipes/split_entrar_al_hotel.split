@@ -11,12 +11,13 @@
     "enabled": false
   },
   "defaultOutputIndex": 1,
-  "seed": 1337,
+  "seed": 12345,
   "randomColumns": [
     "Is_Canceled"
   ],
   "centileOrders": [],
   "rangeSetTime": false,
+  "column": "Is_Canceled",
   "randomSplits": [
     {
       "outputIndex": 0,
@@ -31,7 +32,7 @@
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
-  "mode": "RANDOM_COLUMNS",
+  "mode": "RANDOM",
   "centileTDigest": false,
   "valueSplits": [
     {
