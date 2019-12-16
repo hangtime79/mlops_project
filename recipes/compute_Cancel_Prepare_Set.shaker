@@ -197,8 +197,19 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "if (Total_Size \u003d\u003d 1, 1, 0)",
+        "expression": "if (and(Total_Size \u003d\u003d 2, Adults_Only_Ind \u003d\u003d 1), 1, 0)",
         "column": "Couple_Only_Ind"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if (ADR \u003d\u003d 0, 1, 0)",
+        "column": "Zero_ADR_Ind"
       },
       "alwaysShowComment": false
     }
