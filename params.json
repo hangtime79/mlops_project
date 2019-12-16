@@ -51,12 +51,14 @@
     },
     "codeEnvs": {
       "python": {
-        "useBuiltinEnv": true,
-        "preventOverride": false
+        "useBuiltinEnv": false,
+        "preventOverride": false,
+        "envName": "Mainline27"
       },
       "r": {
-        "useBuiltinEnv": true,
-        "preventOverride": false
+        "useBuiltinEnv": false,
+        "preventOverride": false,
+        "envName": "MainlineR"
       }
     },
     "container": {
@@ -160,6 +162,13 @@
     "displayedState": {
       "checks": []
     }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "gcase"
+    },
+    "lastModifiedOn": 1576460333784
   },
   "creationTag": {
     "versionNumber": 0,
