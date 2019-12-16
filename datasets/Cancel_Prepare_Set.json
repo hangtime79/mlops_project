@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576456127489
+    "lastModifiedOn": 1576456847402
   },
   "creationTag": {
     "versionNumber": 0,
@@ -75,6 +75,10 @@
         "type": "date"
       },
       {
+        "name": "Days_to_Cancel_from_Book",
+        "type": "bigint"
+      },
+      {
         "name": "Cancellation_Date",
         "type": "date"
       },
@@ -83,8 +87,44 @@
         "type": "date"
       },
       {
+        "name": "Planned_Arrival_Yr",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Arrival_Mnth",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Arrival_Dy",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Arrival_DoW",
+        "type": "bigint"
+      },
+      {
+        "name": "Days_to_Cancel_from_Arrival",
+        "type": "bigint"
+      },
+      {
         "name": "Planned_Departure_Date",
         "type": "date"
+      },
+      {
+        "name": "Planned_Departure_Yr",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Departure_Mnth",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Departure_Dy",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Departure_DoW",
+        "type": "bigint"
       },
       {
         "name": "Arrival_Date",
@@ -198,6 +238,30 @@
       {
         "name": "Reservation_Status_Date",
         "type": "date"
+      },
+      {
+        "name": "Total_Kids",
+        "type": "double"
+      },
+      {
+        "name": "Adults_Only_Ind",
+        "type": "bigint"
+      },
+      {
+        "name": "Family_Ind",
+        "type": "bigint"
+      },
+      {
+        "name": "Total_Size",
+        "type": "double"
+      },
+      {
+        "name": "Couple_Only_Ind",
+        "type": "bigint"
+      },
+      {
+        "name": "Single_Only_Ind",
+        "type": "bigint"
       }
     ],
     "userModified": true
