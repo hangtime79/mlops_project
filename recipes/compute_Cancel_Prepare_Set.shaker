@@ -2,11 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {
-    "Meal": {
-      "meaning": "Text"
-    }
-  },
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -30,19 +25,200 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "Days_to_Cancel_from_Book",
+        "input2": "Cancellation_Date",
+        "outputUnit": "DAYS",
+        "input1": "Booking_Date",
+        "compareTo": "COLUMN",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "Days_to_Cancel_from_Arrival",
+        "input2": "Cancellation_Date",
+        "outputUnit": "DAYS",
+        "input1": "Planned_Arrival_Date",
+        "compareTo": "COLUMN",
+        "reverse": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "Planned_Arrival_Mnth",
+        "outYearColumn": "Planned_Arrival_Yr",
+        "column": "Planned_Arrival_Date",
+        "outDayOfWeekColumn": "Planned_Arrival_DoW",
+        "timezone_id": "UTC",
+        "outDayColumn": "Planned_Arrival_Dy"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "Planned_Departure_Mnth",
+        "outYearColumn": "Planned_Departure_Yr",
+        "column": "Planned_Departure_Date",
+        "outDayOfWeekColumn": "Planned_Departure_DoW",
+        "timezone_id": "UTC",
+        "outDayColumn": "Planned_Departure_Dy"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "NumericalCombinator",
+      "params": {
+        "add": true,
+        "div": false,
+        "sub": false,
+        "mul": false,
+        "prefix": "",
+        "columns": [
+          "Babies",
+          "Children"
+        ],
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "add_Babies_Children",
+            "to": "Total_Kids"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "NumericalCombinator",
+      "params": {
+        "add": true,
+        "div": false,
+        "sub": false,
+        "mul": false,
+        "prefix": "",
+        "columns": [
+          "Total_Kids",
+          "Adults"
+        ],
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "add_Total_Kids_Adults",
+            "to": "Total_Size"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if (Total_Kids \u003e 0, 1, 0)",
+        "column": "Family_Ind"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if (Total_Kids \u003d\u003d 0, 1, 0)",
+        "column": "Adults_Only_Ind"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if (Total_Size \u003d\u003d 1, 1, 0)",
+        "column": "Single_Only_Ind"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if (Total_Size \u003d\u003d 1, 1, 0)",
+        "column": "Couple_Only_Ind"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "Meal": {
+      "meaning": "Text"
+    }
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
