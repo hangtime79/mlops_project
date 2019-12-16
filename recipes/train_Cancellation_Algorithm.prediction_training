@@ -59,7 +59,7 @@
     "algorithm": "RANDOM_FOREST_CLASSIFICATION",
     "gridLength": 12
   },
-  "generatingModelId": "A-HOTELCANCELLATIONMODELMONITORING-00Z1s6rO-zz9WT7OK-s2-pp1-m1",
+  "generatingModelId": "A-HOTELCANCELLATIONMODELMONITORING-00Z1s6rO-zz9WT7OK-s3-pp1-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -1576,7 +1576,7 @@
     },
     "ssdTrainingRatio": 0.8,
     "eftdTest": {
-      "datasetSmartName": "entar_2016_train",
+      "datasetSmartName": "entar_2016_test",
       "selection": {
         "useMemTable": false,
         "filter": {
