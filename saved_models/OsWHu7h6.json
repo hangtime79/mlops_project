@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "2016_Model",
   "contentType": "prediction/py_memory",
-  "activeVersion": "1576467288350",
+  "activeVersion": "1576527744831",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -15,7 +15,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-HOTELCANCELLATIONMODELMONITORING-6R7ho0f1-Vp10AA6L-s2-pp1-m1",
+  "lastExportedFrom": "A-HOTELCANCELLATIONMODELMONITORING-6R7ho0f1-Vp10AA6L-s3-pp2-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -701,11 +701,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576467288384
+    "lastModifiedOn": 1576527744861
   },
   "creationTag": {
     "versionNumber": 0,

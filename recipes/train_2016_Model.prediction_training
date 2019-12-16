@@ -3,28 +3,66 @@
     "envMode": "INHERIT"
   },
   "modeling": {
-    "rf_classifier_grid": {
-      "max_features": [
-        0
-      ],
-      "max_feature_prop": 0.3,
-      "n_jobs": 4,
-      "n_estimators": [
-        100
-      ],
-      "selection_mode": "auto",
-      "enabled": true,
-      "min_samples_leaf": [
-        1
-      ],
-      "max_tree_depth": [
-        6,
-        17
-      ]
-    },
     "computeLearningCurves": false,
-    "max_ensemble_nodes_serialized": 6000,
+    "max_ensemble_nodes_serialized": 0,
     "pluginAlgoCustomGridSearch": false,
+    "plugin_python_grid": {
+      "elementId": "model-lightgbm_classification",
+      "pluginVersion": "1.0.0",
+      "pluginId": "model-lightgbm",
+      "name": "LightGBM Classification",
+      "supportsSampleWeights": true,
+      "params": {
+        "colsample_bytree": [
+          1
+        ],
+        "reg_lambda": [
+          0
+        ],
+        "max_depth": [
+          50,
+          100
+        ],
+        "n_jobs": 4,
+        "early_stopping_rounds": 4,
+        "min_split_gain": [
+          0
+        ],
+        "n_estimators": [
+          50,
+          100
+        ],
+        "early_stopping": false,
+        "reg_alpha": [
+          0
+        ],
+        "random_state": 1337,
+        "boosting_type": [
+          "gbdt"
+        ],
+        "subsample_freq": [
+          0
+        ],
+        "min_child_samples": [
+          20
+        ],
+        "num_leaves": [
+          50,
+          100
+        ],
+        "subsample": [
+          1
+        ],
+        "learning_rate": [
+          0.2
+        ],
+        "min_child_weight": [
+          0.001
+        ]
+      },
+      "enabled": true,
+      "acceptsSparseMatrix": false
+    },
     "metrics": {
       "customEvaluationMetricGIB": true,
       "costMatrixWeights": {
@@ -52,10 +90,10 @@
       "timeout": 0
     },
     "skipExpensiveReports": false,
-    "algorithm": "RANDOM_FOREST_CLASSIFICATION",
-    "gridLength": 2
+    "algorithm": "CUSTOM_PLUGIN",
+    "gridLength": 8
   },
-  "generatingModelId": "A-HOTELCANCELLATIONMODELMONITORING-6R7ho0f1-Vp10AA6L-s2-pp1-m1",
+  "generatingModelId": "A-HOTELCANCELLATIONMODELMONITORING-6R7ho0f1-Vp10AA6L-s3-pp2-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
