@@ -1794,7 +1794,7 @@
     "custom_mllib": [],
     "max_ensemble_nodes_serialized": 6000,
     "lars_params": {
-      "enabled": false,
+      "enabled": true,
       "max_features": 0,
       "K": 100
     }
