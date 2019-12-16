@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Cancellation Algorithm",
   "contentType": "prediction/py_memory",
-  "activeVersion": "1576462496616",
+  "activeVersion": "1576462868416",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -701,11 +701,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576462496652
+    "lastModifiedOn": 1576462868460
   },
   "creationTag": {
     "versionNumber": 0,
