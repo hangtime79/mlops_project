@@ -114,27 +114,67 @@
               },
               {
                 "name": "Booking_Date",
-                "type": "string"
+                "type": "date"
+              },
+              {
+                "name": "Days_to_Cancel_from_Book",
+                "type": "bigint"
               },
               {
                 "name": "Cancellation_Date",
-                "type": "string"
+                "type": "date"
               },
               {
                 "name": "Planned_Arrival_Date",
-                "type": "string"
+                "type": "date"
+              },
+              {
+                "name": "Planned_Arrival_Yr",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_Mnth",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_Dy",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_DoW",
+                "type": "bigint"
+              },
+              {
+                "name": "Days_to_Cancel_from_Arrival",
+                "type": "bigint"
               },
               {
                 "name": "Planned_Departure_Date",
-                "type": "string"
+                "type": "date"
+              },
+              {
+                "name": "Planned_Departure_Yr",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Mnth",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Dy",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_DoW",
+                "type": "bigint"
               },
               {
                 "name": "Arrival_Date",
-                "type": "string"
+                "type": "date"
               },
               {
                 "name": "Departure_Date",
-                "type": "string"
+                "type": "date"
               },
               {
                 "name": "Stay_in_Weekend_Nights",
@@ -207,11 +247,11 @@
               },
               {
                 "name": "Agent",
-                "type": "string"
+                "type": "bigint"
               },
               {
                 "name": "Company",
-                "type": "string"
+                "type": "bigint"
               },
               {
                 "name": "Days_in_Waiting_List",
@@ -224,6 +264,10 @@
               {
                 "name": "ADR",
                 "type": "double"
+              },
+              {
+                "name": "Zero_ADR_Ind",
+                "type": "bigint"
               },
               {
                 "name": "Parking_Spaces_Needed",
@@ -239,7 +283,31 @@
               },
               {
                 "name": "Reservation_Status_Date",
-                "type": "string"
+                "type": "date"
+              },
+              {
+                "name": "Total_Kids",
+                "type": "double"
+              },
+              {
+                "name": "Adults_Only_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Family_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Total_Size",
+                "type": "double"
+              },
+              {
+                "name": "Couple_Only_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Single_Only_Ind",
+                "type": "bigint"
               }
             ]
           }
