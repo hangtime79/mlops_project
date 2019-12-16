@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576456847402
+    "lastModifiedOn": 1576456993477
   },
   "creationTag": {
     "versionNumber": 0,
@@ -222,6 +222,10 @@
       {
         "name": "ADR",
         "type": "double"
+      },
+      {
+        "name": "Zero_ADR_Ind",
+        "type": "bigint"
       },
       {
         "name": "Parking_Spaces_Needed",
