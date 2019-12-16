@@ -59,7 +59,7 @@
       }
     },
     "eftdTest": {
-      "datasetSmartName": "entar_2016_train",
+      "datasetSmartName": "entar_2016_test",
       "selection": {
         "useMemTable": false,
         "filter": {
