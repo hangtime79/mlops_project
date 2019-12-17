@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": true,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    "onBehalf": "w9G7nq4",
+    "id": "koX9CoxbUj4dmM7Z",
+    "key": "Ff2VaXN2qjDDahO93zVX5aIvcnvMY6Sm",
+    "label": "Key for Web app Plugin skin(w9G7nq4)",
+    "createdOn": 1576574055345
+  }
+]
