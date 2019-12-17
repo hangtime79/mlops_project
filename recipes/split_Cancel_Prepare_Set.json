@@ -23,16 +23,20 @@
         {
           "ref": "Check",
           "appendMode": false
+        },
+        {
+          "ref": "check2",
+          "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576609264782
+    "lastModifiedOn": 1576609302729
   },
   "creationTag": {
     "versionNumber": 0,
