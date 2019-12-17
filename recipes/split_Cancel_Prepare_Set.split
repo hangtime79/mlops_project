@@ -12,7 +12,9 @@
   },
   "defaultOutputIndex": 1,
   "seed": 1337,
-  "randomColumns": [],
+  "randomColumns": [
+    "Is_Canceled"
+  ],
   "centileOrders": [
     {
       "column": "Is_Canceled",
@@ -38,7 +40,7 @@
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
-  "mode": "CENTILE",
+  "mode": "RANDOM_COLUMNS",
   "centileTDigest": false,
   "valueSplits": [
     {
