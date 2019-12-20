@@ -63,7 +63,7 @@
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
-        "maxStoredBytes": 104857600,
+        "maxStoredBytes": 10485760000,
         "filter": {
           "distinct": false,
           "enabled": false
@@ -74,14 +74,15 @@
           "enabled": false,
           "rules": []
         },
-        "samplingMethod": "RANDOM_FIXED_NB_EXACT",
+        "samplingMethod": "STRATIFIED_TARGET_NB_EXACT",
         "maxRecords": 10000,
         "targetRatio": 0.02,
+        "column": "Is_Canceled",
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1
+      "_refreshTrigger": 4
     },
     "vizSampling": {
       "autoRefreshSample": false,
