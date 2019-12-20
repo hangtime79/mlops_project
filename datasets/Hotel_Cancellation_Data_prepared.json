@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576232766384
+    "lastModifiedOn": 1576873031458
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,27 +72,27 @@
       },
       {
         "name": "Booking_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Cancellation_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Planned_Arrival_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Planned_Departure_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Arrival_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Departure_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Stay_in_Weekend_Nights",
@@ -197,7 +197,7 @@
       },
       {
         "name": "Reservation_Status_Date",
-        "type": "string"
+        "type": "date"
       }
     ],
     "userModified": true
