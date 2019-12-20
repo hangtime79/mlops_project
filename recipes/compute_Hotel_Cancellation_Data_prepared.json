@@ -62,18 +62,18 @@
     "main": {
       "items": [
         {
-          "ref": "Hotel_Cancellation_Data_prepared",
+          "ref": "Hotel_Cancellation",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576233005886
+    "lastModifiedOn": 1576873066016
   },
   "creationTag": {
     "versionNumber": 0,
