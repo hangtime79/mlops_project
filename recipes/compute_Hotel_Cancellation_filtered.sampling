@@ -1,4 +1,49 @@
 {
+  "uiData": {
+    "mode": "CUSTOM",
+    "conditions": [
+      {
+        "input": "Dataset",
+        "col": "Is_Canceled",
+        "num": 1,
+        "operator": "\u003d\u003d [number]"
+      },
+      {
+        "input": "Dataset",
+        "col": "Is_Canceled",
+        "num": 2,
+        "operator": "\u003d\u003d [number]"
+      },
+      {
+        "input": "Is_Canceled",
+        "col": "Is_Canceled",
+        "num": 0,
+        "operator": "\u003d\u003d [number]"
+      },
+      {
+        "input": "Is_Canceled",
+        "col": "Is_Canceled",
+        "num": 1,
+        "operator": "\u003d\u003d [number]"
+      },
+      {
+        "date": "2019-12-20",
+        "input": "Booking_Date",
+        "col": "Is_Canceled",
+        "unit": "seconds",
+        "num": 0,
+        "time": "00:00",
+        "operator": "\u003c  [date]"
+      }
+    ]
+  },
+  "expression": "( val(\u0027Dataset\u0027) \u003d\u003d 1 ) \u0026\u0026 ( val(\u0027Dataset\u0027) \u003d\u003d 2 ) \u0026\u0026 ( val(\u0027Is_Canceled\u0027) \u003d\u003d 0 ) \u0026\u0026 ( val(\u0027Is_Canceled\u0027) \u003d\u003d 1 ) \u0026\u0026 ( diff(val(\u0027Booking_Date\u0027), asDate(\u00272019-12-20 00:00\u0027, \u0027yyyy-MM-dd HH:mm\u0027), \u0027seconds\u0027) \u003c 0 )",
+  "$status": {
+    "validated": false,
+    "fullyTranslated": false,
+    "ok": false,
+    "message": "Filter expression is invalid"
+  },
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }
