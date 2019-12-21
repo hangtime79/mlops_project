@@ -13,8 +13,5 @@ split_percentage <- .75
 split <- createDataPartition(data$Is_Canceled, p=split_percentage, list=FALSE)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-str(split)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
-dkuWriteDataset(hotel_1,"Hotel_1")
+dkuWriteDataset(split,"train")
