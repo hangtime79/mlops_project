@@ -14,4 +14,4 @@ split <- createDataPartition(data$Is_Canceled, p=split_percentage, list=FALSE)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
-dkuWriteDataset(split,"train")
+dkuWriteDataset(split,"train_idx")
