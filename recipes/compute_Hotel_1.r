@@ -12,6 +12,8 @@ split_percentage <- .75
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 split <- createDataPartition(data$Is_Canceled, p=split_percentage, list=FALSE)
 
+split <- as.data.frame(split)
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
 dkuWriteDataset(split,"train_idx")
