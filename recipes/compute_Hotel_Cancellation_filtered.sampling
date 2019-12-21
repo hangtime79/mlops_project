@@ -37,13 +37,13 @@
       }
     ]
   },
-  "expression": "( val(\u0027Dataset\u0027) \u003d\u003d 1 ) \u0026\u0026 ( val(\u0027Dataset\u0027) \u003d\u003d 2 ) \n\u0026\u0026 ( diff(val(\u0027Booking_Date\u0027), asDate(\u00272019-12-20 00:00\u0027, \u0027yyyy-MM-dd HH:mm\u0027), \u0027seconds\u0027) \u003c 0 )",
+  "expression": "(( val(\u0027Dataset\u0027) \u003d\u003d ${dataset_A} ) || ( val(\u0027Dataset\u0027) \u003d\u003d ${dataset_B} ) )\n\n\u0026\u0026 ( diff(val(\u0027Booking_Date\u0027), asDate(\u0027${trigger_dt}\u0027, \u0027yyyy-MM-dd HH:mm\u0027), \u0027seconds\u0027) \u003c 0 )",
   "$status": {
     "validated": true,
     "fullyTranslated": true,
     "ok": true,
-    "message": "Incorrect formula: \u0027( val(\u0027Dataset\u0027) \u003d\u003d 1 ) in\n\u0026\u0026 ( val(\u0027Dataset\u0027) \u003d\u003d 2 ) \n\u0026\u0026 ( diff(val(\u0027Booking_Date\u0027), asDate(\u00272019-12-20 00:00\u0027, \u0027yyyy-MM-dd HH:mm\u0027), \u0027seconds\u0027) \u003c 0 )\u0027 : Unidentified token \"in\". (Parsing error at offset 24)",
-    "sql": "(\"Dataset\" \u003d 1) AND (\"Dataset\" \u003d 2) AND \"Booking_Date\" - \u00272019-12-20 00:00:00\u0027 \u003c 0"
+    "message": "Incorrect formula: \u0027(( val(\u0027Dataset\u0027) \u003d\u003d 1 ) || ( val(\u0027Dataset\u0027) \u003d\u003d -1 ) )\n\n\u0026\u0026 ( diff(val(\u0027Booking_Date\u0027), asDate(\u00272017-01-01 00:00, \u0027yyyy-MM-dd HH:mm\u0027), \u0027seconds\u0027) \u003c 0 )\u0027 : Unidentified token \"yyyy\". (Parsing error at offset 114)",
+    "sql": "((\"Dataset\" \u003d 1) OR (\"Dataset\" \u003d -1.0)) AND \"Booking_Date\" - \u00272017-01-01 00:00:00\u0027 \u003c 0"
   },
   "distinct": false,
   "enabled": true
