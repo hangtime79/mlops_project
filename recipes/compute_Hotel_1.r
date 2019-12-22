@@ -12,7 +12,7 @@ input_data <- "Hotel_Cancellation_filtered"
 data <- dkuReadDataset(input_data, samplingMethod="full")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-split <- createDataPartition(data$[[target_col]], p=split_percentage, list=FALSE)
+split <- createDataPartition(data[[target_col]], p=split_percentage, list=FALSE)
 split <- as.data.frame(split)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
