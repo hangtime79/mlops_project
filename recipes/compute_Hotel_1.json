@@ -30,22 +30,22 @@
     "main": {
       "items": [
         {
-          "ref": "train_idx",
+          "ref": "train",
           "appendMode": false
         },
         {
-          "ref": "test_idx",
+          "ref": "test",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576971386694
+    "lastModifiedOn": 1576984826195
   },
   "creationTag": {
     "versionNumber": 0,
