@@ -13,7 +13,9 @@ data <- dkuReadDataset(input_data, samplingMethod="full")
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 split <- createDataPartition(data[[target_col]], p=split_percentage, list=FALSE)
-split <- as.data.frame(split)
+
+train <- data[split,]
+test <- data[-split,]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
