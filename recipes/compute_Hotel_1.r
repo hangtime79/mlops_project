@@ -16,4 +16,5 @@ split <- as.data.frame(split)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
-dkuWriteDataset(split,"train_idx")
+dkuWriteDataset(train,"train")
+dkuWriteDataset(test,"test")
