@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577053914838
+    "lastModifiedOn": 1577053948844
   },
   "creationTag": {
     "versionNumber": 0,
@@ -232,7 +232,48 @@
           "level": 2
         },
         "configuration": {
-          "aggregates": []
+          "aggregates": [
+            {
+              "column": "Is_Canceled",
+              "aggregated": "MEAN"
+            },
+            {
+              "column": "Is_Canceled",
+              "aggregated": "STDDEV"
+            },
+            {
+              "column": "Lead_Time",
+              "aggregated": "MEAN"
+            },
+            {
+              "column": "Lead_Time",
+              "aggregated": "STDDEV"
+            },
+            {
+              "column": "Stay_in_Weekend_Nights",
+              "aggregated": "MEAN"
+            },
+            {
+              "column": "Stay_in_Weekend_Nights",
+              "aggregated": "STDDEV"
+            },
+            {
+              "column": "Stay_in_Week_Nights",
+              "aggregated": "MEAN"
+            },
+            {
+              "column": "Stay_in_Week_Nights",
+              "aggregated": "STDDEV"
+            },
+            {
+              "column": "Stay_in_Nights",
+              "aggregated": "MEAN"
+            },
+            {
+              "column": "Stay_in_Nights",
+              "aggregated": "STDDEV"
+            }
+          ]
         }
       },
       {
