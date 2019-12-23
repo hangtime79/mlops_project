@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577059653341
+    "lastModifiedOn": 1577098180767
   },
   "creationTag": {
     "versionNumber": 0,
@@ -75,6 +75,10 @@
         "type": "string"
       },
       {
+        "name": "Days_to_Cancel_from_Book",
+        "type": "bigint"
+      },
+      {
         "name": "Cancellation_Date",
         "type": "string"
       },
@@ -83,8 +87,44 @@
         "type": "string"
       },
       {
+        "name": "Planned_Arrival_Yr",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Arrival_Mnth",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Arrival_Dy",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Arrival_DoW",
+        "type": "bigint"
+      },
+      {
+        "name": "Days_to_Cancel_from_Arrival",
+        "type": "bigint"
+      },
+      {
         "name": "Planned_Departure_Date",
         "type": "string"
+      },
+      {
+        "name": "Planned_Departure_Yr",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Departure_Mnth",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Departure_Dy",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Departure_DoW",
+        "type": "bigint"
       },
       {
         "name": "Arrival_Date",
@@ -183,6 +223,10 @@
         "type": "double"
       },
       {
+        "name": "Zero_ADR_Ind",
+        "type": "bigint"
+      },
+      {
         "name": "Parking_Spaces_Needed",
         "type": "bigint"
       },
@@ -197,6 +241,30 @@
       {
         "name": "Reservation_Status_Date",
         "type": "string"
+      },
+      {
+        "name": "Total_Kids",
+        "type": "double"
+      },
+      {
+        "name": "Adults_Only_Ind",
+        "type": "bigint"
+      },
+      {
+        "name": "Family_Ind",
+        "type": "bigint"
+      },
+      {
+        "name": "Total_Size",
+        "type": "double"
+      },
+      {
+        "name": "Couple_Only_Ind",
+        "type": "bigint"
+      },
+      {
+        "name": "Single_Only_Ind",
+        "type": "bigint"
       }
     ],
     "userModified": false
