@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577101457324
+    "lastModifiedOn": 1577101457627
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,19 +60,19 @@
     "columns": [
       {
         "name": "Booking_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Booking_Date_Yr",
-        "type": "bigint"
+        "type": "int"
       },
       {
         "name": "Booking_Date_Mnth",
-        "type": "bigint"
+        "type": "int"
       },
       {
         "name": "Booking_Date_Day",
-        "type": "bigint"
+        "type": "int"
       }
     ],
     "userModified": false
