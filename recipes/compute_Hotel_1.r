@@ -1,6 +1,7 @@
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 library(dataiku)
 library(caret)
+library(compare)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 target_col <- "Is_Canceled"
@@ -19,6 +20,9 @@ split <- createDataPartition(data[[target_col]], p=split_percentage, list=FALSE)
 
 train <- data[split,]
 test <- data[-split,]
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+compare(equal = )
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
