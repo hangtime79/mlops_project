@@ -5,7 +5,7 @@ library(caret)
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 target_col <- "Is_Canceled"
 split_percentage <- .75
-input_data <- "Hotel_Cancellation_filtered"
+input_data <- "Hotel_Cancellation_Prepared"
 seed_val <- 456789
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
