@@ -21,18 +21,26 @@
     "main": {
       "items": [
         {
-          "ref": "Dataset_A",
+          "ref": "Hotel_1",
+          "appendMode": false
+        },
+        {
+          "ref": "Hotel_2",
+          "appendMode": false
+        },
+        {
+          "ref": "Hotel_Other",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577098542646
+    "lastModifiedOn": 1577098621075
   },
   "creationTag": {
     "versionNumber": 0,
