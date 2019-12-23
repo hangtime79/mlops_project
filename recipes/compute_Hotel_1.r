@@ -6,6 +6,7 @@ library(caret)
 target_col <- "Is_Canceled"
 split_percentage <- .75
 input_data <- "Hotel_Cancellation_filtered"
+seed_val <- 456789
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe inputs
@@ -15,7 +16,7 @@ data <- dkuReadDataset(input_data, samplingMethod="full")
 data[[target_col]] <- as.factor(data[[target_col]])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-set.seed(456789)
+set.seed(seed_val)
 
 split <- createDataPartition(data[[target_col]], p=split_percentage, list=FALSE)
 
