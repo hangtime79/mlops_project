@@ -7,7 +7,7 @@ target_col <- "Is_Canceled"
 target_col_is_factor <- TRUE
 split_percentage <- .75
 seed_val <- 456789
-input_data <- "Hotel_Cancellation_Prepared"
+input_data <- "Hotel_1"
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 output_table_prefix <- "Hotel_1"
