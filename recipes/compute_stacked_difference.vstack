@@ -1,0 +1,98 @@
+{
+  "mode": "UNION",
+  "selectedColumns": [
+    "Dataset",
+    "Is_Canceled",
+    "Lead_Time",
+    "Booking_Date",
+    "Cancellation_Date",
+    "Planned_Arrival_Date",
+    "Planned_Departure_Date",
+    "Arrival_Date",
+    "Departure_Date",
+    "Stay_in_Weekend_Nights",
+    "Stay_in_Week_Nights",
+    "Stay_in_Nights",
+    "Adults",
+    "Children",
+    "Babies",
+    "Meal",
+    "Country",
+    "Market_Segment",
+    "Distribution_Channel",
+    "Is_Repeated_Guest",
+    "Previous_Cancellations",
+    "Previous_Completed_Stays",
+    "Reserved_Room_Type",
+    "Assigned_Room_Type",
+    "Booking_Changes",
+    "Deposit_Type",
+    "Agent",
+    "Company",
+    "Days_in_Waiting_List",
+    "Customer_Type",
+    "ADR",
+    "Parking_Spaces_Needed",
+    "Special_Request_Cnt",
+    "Reservation_Status",
+    "Reservation_Status_Date"
+  ],
+  "originColumnName": "original_dataset",
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "train",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "test",
+      "index": 1
+    }
+  ],
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": false
+}
