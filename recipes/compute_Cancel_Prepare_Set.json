@@ -11,6 +11,9 @@
           "map": {
             "Hotel_Cancellation_Data_prepared": {
               "repartition": 10
+            },
+            "Hotel_Cancellation_filtered": {
+              "repartition": 10
             }
           }
         },
@@ -69,11 +72,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577098035742
+    "lastModifiedOn": 1577098042833
   },
   "creationTag": {
     "versionNumber": 0,
