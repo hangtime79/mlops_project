@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577064234176
+    "lastModifiedOn": 1577084210781
   },
   "creationTag": {
     "versionNumber": 0,
@@ -120,8 +120,7 @@
       },
       {
         "name": "Meal",
-        "type": "string",
-        "meaning": "Text"
+        "type": "string"
       },
       {
         "name": "Country",
@@ -200,7 +199,7 @@
         "type": "string"
       }
     ],
-    "userModified": true
+    "userModified": false
   },
   "metrics": {
     "probes": [
