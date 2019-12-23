@@ -15,6 +15,8 @@ data <- dkuReadDataset(input_data, samplingMethod="full")
 data[[target_col]] <- as.factor(data[[target_col]])
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+set.seed(456789)
+
 split <- createDataPartition(data[[target_col]], p=split_percentage, list=FALSE)
 
 train <- data[split,]
