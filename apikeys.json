@@ -60,5 +60,36 @@
     "key": "SWXkda0AdKKklizo4nEtmHLdXpWJkXSj",
     "label": "Key for Web app Plugin chart(DpTpbVV)",
     "createdOn": 1577100489116
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": true,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    "onBehalf": "iQDw3nd",
+    "id": "4uSWQqfGScP3wIkF",
+    "key": "uhqiexf9jusEoKheeHPGwa8hpXL0BH7R",
+    "label": "Key for Web app Plugin chart(iQDw3nd)",
+    "createdOn": 1577100559273
   }
 ]
