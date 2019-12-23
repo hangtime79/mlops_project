@@ -30,22 +30,22 @@
     "main": {
       "items": [
         {
-          "ref": "train",
+          "ref": "Hotel_1_Train",
           "appendMode": false
         },
         {
-          "ref": "test",
+          "ref": "Hotel_1_Test",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 50,
+    "versionNumber": 51,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577100151481
+    "lastModifiedOn": 1577100171739
   },
   "creationTag": {
     "versionNumber": 0,
