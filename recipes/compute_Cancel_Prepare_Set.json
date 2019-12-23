@@ -65,18 +65,18 @@
     "main": {
       "items": [
         {
-          "ref": "Cancel_Prepare_Set",
+          "ref": "Hotel_Cancellation_Prepared",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577098042833
+    "lastModifiedOn": 1577098123287
   },
   "creationTag": {
     "versionNumber": 0,
