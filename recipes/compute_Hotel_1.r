@@ -22,9 +22,6 @@ train <- data[split,]
 test <- data[-split,]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-compare(equal = )
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
 dkuWriteDataset(train,"train")
 dkuWriteDataset(test,"test")
