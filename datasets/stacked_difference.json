@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577060391877
+    "lastModifiedOn": 1577060435825
   },
   "creationTag": {
     "versionNumber": 0,
@@ -196,6 +196,10 @@
       },
       {
         "name": "Reservation_Status_Date",
+        "type": "string"
+      },
+      {
+        "name": "original_dataset",
         "type": "string"
       }
     ],
