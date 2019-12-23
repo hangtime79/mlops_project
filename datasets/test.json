@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577053082472
+    "lastModifiedOn": 1577059653341
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,7 +64,7 @@
       },
       {
         "name": "Is_Canceled",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Lead_Time",
