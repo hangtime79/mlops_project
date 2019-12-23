@@ -1,7 +1,6 @@
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 library(dataiku)
 library(caret)
-library(compare)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 target_col <- "Is_Canceled"
