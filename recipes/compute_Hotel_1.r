@@ -26,6 +26,13 @@ df <- form_df
 output_train <- paste(output_table_prefix, "_", output_train_suffix, sep = "")
 output_test <- paste(output_table_prefix, "_", output_test_suffix, sep = "")
 
+getSchemaUrl = dataiku:::dku_intercom__get_jek_or_backend_url("/datasets/get-schema/")
+setSchemaUrl = dataiku:::dku_intercom__get_jek_or_backend_url("/datasets/set-schema/")
+
+df_name <- dataiku:::dku__resolve_smart_name(df)
+output_train_name <- dataiku:::dku__resolve_smart_name(output_train)
+output_test_name <- dataiku:::dku__resolve_smart_name(output_test)
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe inputs
 data <- dkuReadDataset(df, samplingMethod="full")
