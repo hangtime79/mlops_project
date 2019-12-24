@@ -68,6 +68,11 @@ dkuWriteDataset(test,output_test)
 jsonData = RJSONIO:::toJSON(df_schema)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+# Recipe outputs
+dkuWriteDataset(hotel_1_train,"Hotel_1_Train")
+dkuWriteDataset(hotel_1_test,"Hotel_1_Test")
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # resp = POST(setSchemaUrl, body = list(fullDatasetName = output_train_name,
 #         schemaData = jsonData), encode = "form", dataiku:::dku__get_auth_headers())
 #     if (resp$status != 200) {
@@ -80,8 +85,3 @@ jsonData = RJSONIO:::toJSON(df_schema)
 #         parsed = content(resp)
 #         stop(paste("Failed to write dataset:", parsed$detailedMessage))
 #     }
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Recipe outputs
-dkuWriteDataset(hotel_1_train,"Hotel_1_Train")
-dkuWriteDataset(hotel_1_test,"Hotel_1_Test")
