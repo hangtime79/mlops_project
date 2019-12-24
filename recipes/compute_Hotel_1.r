@@ -66,15 +66,15 @@ dkuWriteDataset(test,output_test)
 jsonData = RJSONIO:::toJSON(df_schema)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-resp = POST(setSchemaUrl, body = list(fullDatasetName = output_train_name,
-        schemaData = jsonData), encode = "form", dataiku:::dku__get_auth_headers())
-    if (resp$status != 200) {
-        parsed = content(resp)
-        stop(paste("Failed to write dataset:", parsed$detailedMessage))
-    }
-resp = POST(setSchemaUrl, body = list(fullDatasetName = output_test_name,
-        schemaData = jsonData), encode = "form", dataiku:::dku__get_auth_headers())
-    if (resp$status != 200) {
-        parsed = content(resp)
-        stop(paste("Failed to write dataset:", parsed$detailedMessage))
-    }
+# resp = POST(setSchemaUrl, body = list(fullDatasetName = output_train_name,
+#         schemaData = jsonData), encode = "form", dataiku:::dku__get_auth_headers())
+#     if (resp$status != 200) {
+#         parsed = content(resp)
+#         stop(paste("Failed to write dataset:", parsed$detailedMessage))
+#     }
+# resp = POST(setSchemaUrl, body = list(fullDatasetName = output_test_name,
+#         schemaData = jsonData), encode = "form", dataiku:::dku__get_auth_headers())
+#     if (resp$status != 200) {
+#         parsed = content(resp)
+#         stop(paste("Failed to write dataset:", parsed$detailedMessage))
+#     }
