@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577186012290
+    "lastModifiedOn": 1577186105987
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,8 +57,217 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Dataset",
+        "type": "bigint"
+      },
+      {
+        "name": "Is_Canceled",
+        "type": "string"
+      },
+      {
+        "name": "Lead_Time",
+        "type": "bigint"
+      },
+      {
+        "name": "Booking_Date",
+        "type": "string"
+      },
+      {
+        "name": "Days_to_Cancel_from_Book",
+        "type": "bigint"
+      },
+      {
+        "name": "Cancellation_Date",
+        "type": "string"
+      },
+      {
+        "name": "Planned_Arrival_Date",
+        "type": "string"
+      },
+      {
+        "name": "Planned_Arrival_Yr",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Arrival_Mnth",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Arrival_Dy",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Arrival_DoW",
+        "type": "bigint"
+      },
+      {
+        "name": "Days_to_Cancel_from_Arrival",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Departure_Date",
+        "type": "string"
+      },
+      {
+        "name": "Planned_Departure_Yr",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Departure_Mnth",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Departure_Dy",
+        "type": "bigint"
+      },
+      {
+        "name": "Planned_Departure_DoW",
+        "type": "bigint"
+      },
+      {
+        "name": "Arrival_Date",
+        "type": "string"
+      },
+      {
+        "name": "Departure_Date",
+        "type": "string"
+      },
+      {
+        "name": "Stay_in_Weekend_Nights",
+        "type": "bigint"
+      },
+      {
+        "name": "Stay_in_Week_Nights",
+        "type": "bigint"
+      },
+      {
+        "name": "Stay_in_Nights",
+        "type": "bigint"
+      },
+      {
+        "name": "Adults",
+        "type": "bigint"
+      },
+      {
+        "name": "Children",
+        "type": "bigint"
+      },
+      {
+        "name": "Babies",
+        "type": "bigint"
+      },
+      {
+        "name": "Meal",
+        "type": "string"
+      },
+      {
+        "name": "Country",
+        "type": "string"
+      },
+      {
+        "name": "Market_Segment",
+        "type": "string"
+      },
+      {
+        "name": "Distribution_Channel",
+        "type": "string"
+      },
+      {
+        "name": "Is_Repeated_Guest",
+        "type": "bigint"
+      },
+      {
+        "name": "Previous_Cancellations",
+        "type": "bigint"
+      },
+      {
+        "name": "Previous_Completed_Stays",
+        "type": "bigint"
+      },
+      {
+        "name": "Reserved_Room_Type",
+        "type": "string"
+      },
+      {
+        "name": "Assigned_Room_Type",
+        "type": "string"
+      },
+      {
+        "name": "Booking_Changes",
+        "type": "bigint"
+      },
+      {
+        "name": "Deposit_Type",
+        "type": "string"
+      },
+      {
+        "name": "Agent",
+        "type": "bigint"
+      },
+      {
+        "name": "Company",
+        "type": "bigint"
+      },
+      {
+        "name": "Days_in_Waiting_List",
+        "type": "bigint"
+      },
+      {
+        "name": "Customer_Type",
+        "type": "string"
+      },
+      {
+        "name": "ADR",
+        "type": "double"
+      },
+      {
+        "name": "Zero_ADR_Ind",
+        "type": "bigint"
+      },
+      {
+        "name": "Parking_Spaces_Needed",
+        "type": "bigint"
+      },
+      {
+        "name": "Special_Request_Cnt",
+        "type": "bigint"
+      },
+      {
+        "name": "Reservation_Status",
+        "type": "string"
+      },
+      {
+        "name": "Reservation_Status_Date",
+        "type": "string"
+      },
+      {
+        "name": "Total_Kids",
+        "type": "double"
+      },
+      {
+        "name": "Adults_Only_Ind",
+        "type": "bigint"
+      },
+      {
+        "name": "Family_Ind",
+        "type": "bigint"
+      },
+      {
+        "name": "Total_Size",
+        "type": "double"
+      },
+      {
+        "name": "Couple_Only_Ind",
+        "type": "bigint"
+      },
+      {
+        "name": "Single_Only_Ind",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
