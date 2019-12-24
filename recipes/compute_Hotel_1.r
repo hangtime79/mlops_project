@@ -1,6 +1,8 @@
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 library(dataiku)
 library(caret)
+library(httr)
+library(jsonlite)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 form_target_col <- "Is_Canceled"
