@@ -12,6 +12,7 @@ form_output_table_prefix <- "Hotel_1"
 form_output_train_suffix <- "Train"
 form_output_test_suffix <- "Test"
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 output_table_prefix <- form_output_table_prefix
 output_train_suffix <- form_output_train_suffix
 output_test_suffix <- form_output_test_suffix
@@ -22,8 +23,6 @@ seed_val <- form_seed_val
 df <- form_df
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-
-
 output_train <- paste(output_table_prefix, "_", output_train_suffix, sep = "")
 output_test <- paste(output_table_prefix, "_", output_test_suffix, sep = "")
 
