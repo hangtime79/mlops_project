@@ -34,6 +34,11 @@ output_train_name <- dataiku:::dku__resolve_smart_name(output_train)
 output_test_name <- dataiku:::dku__resolve_smart_name(output_test)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+resp <- POST(getSchemaUrl,body = list(fullDatasetName=df_name),
+              encode="form", dataiku:::dku__get_auth_headers())
+df_schema <- content(resp)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe inputs
 data <- dkuReadDataset(df, samplingMethod="full")
 
@@ -56,3 +61,20 @@ test <- data[-split,]
 # Recipe outputs
 dkuWriteDataset(train,output_train)
 dkuWriteDataset(test,output_test)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+jsonData = RJSONIO:::toJSON(df_schema)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+resp = POST(setSchemaUrl, body = list(fullDatasetName = output_train_name,
+        schemaData = jsonData), encode = "form", dataiku:::dku__get_auth_headers())
+    if (resp$status != 200) {
+        parsed = content(resp)
+        stop(paste("Failed to write dataset:", parsed$detailedMessage))
+    }
+resp = POST(setSchemaUrl, body = list(fullDatasetName = output_test_name,
+        schemaData = jsonData), encode = "form", dataiku:::dku__get_auth_headers())
+    if (resp$status != 200) {
+        parsed = content(resp)
+        stop(paste("Failed to write dataset:", parsed$detailedMessage))
+    }
