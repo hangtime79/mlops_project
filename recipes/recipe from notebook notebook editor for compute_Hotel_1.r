@@ -67,7 +67,6 @@ dkuWriteDataset(test,output_test)
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # jsonData = RJSONIO:::toJSON(df_schema)
 
-
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # resp = POST(setSchemaUrl, body = list(fullDatasetName = output_train_name,
 #         schemaData = jsonData), encode = "form", dataiku:::dku__get_auth_headers())
