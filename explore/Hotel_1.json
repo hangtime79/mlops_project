@@ -331,7 +331,18 @@
         "groupDimension": [],
         "xMeasure": [],
         "yMeasure": [],
-        "colorMeasure": [],
+        "colorMeasure": [
+          {
+            "column": "Is_Canceled",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
         "sizeMeasure": [],
         "geometry": [],
         "tooltipMeasures": [],
