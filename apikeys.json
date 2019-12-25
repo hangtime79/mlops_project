@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": true,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    "onBehalf": "5O8sGT3",
+    "id": "yQEDn4Qs860SsRU5",
+    "key": "vAuFaaBF5ixOLj40LUcfd3voCI2CW3Xw",
+    "label": "Key for Web app Plugin chart(5O8sGT3)",
+    "createdOn": 1577311356925
+  }
+]
