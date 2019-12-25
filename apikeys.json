@@ -29,5 +29,36 @@
     "key": "vAuFaaBF5ixOLj40LUcfd3voCI2CW3Xw",
     "label": "Key for Web app Plugin chart(5O8sGT3)",
     "createdOn": 1577311356925
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": true,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    "onBehalf": "EQlCRON",
+    "id": "1yCxgeAb4yqekRdL",
+    "key": "mlbUPEqsIB0dyEvscJfNHt494U3E08SE",
+    "label": "Key for Web app Plugin chart(EQlCRON)",
+    "createdOn": 1577311369008
   }
 ]
