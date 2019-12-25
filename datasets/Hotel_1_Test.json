@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577270039104
+    "lastModifiedOn": 1577270039695
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,7 +64,7 @@
       },
       {
         "name": "Is_Canceled",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Lead_Time",
@@ -72,7 +72,7 @@
       },
       {
         "name": "Booking_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Days_to_Cancel_from_Book",
@@ -80,11 +80,11 @@
       },
       {
         "name": "Cancellation_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Planned_Arrival_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Planned_Arrival_Yr",
@@ -108,7 +108,7 @@
       },
       {
         "name": "Planned_Departure_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Planned_Departure_Yr",
@@ -128,11 +128,11 @@
       },
       {
         "name": "Arrival_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Departure_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Stay_in_Weekend_Nights",
@@ -160,7 +160,8 @@
       },
       {
         "name": "Meal",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "Country",
@@ -240,7 +241,7 @@
       },
       {
         "name": "Reservation_Status_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Total_Kids",
@@ -267,7 +268,7 @@
         "type": "bigint"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "metrics": {
     "probes": [
