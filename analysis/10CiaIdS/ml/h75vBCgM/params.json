@@ -13,7 +13,7 @@
   },
   "guessPolicy": "PERFORMANCE",
   "splitParams": {
-    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ttPolicy": "EXPLICIT_FILTERING_TWO_DATASETS",
     "ssdSplitMode": "RANDOM",
     "splitBeforePrepare": true,
     "ssdSelection": {
@@ -37,6 +37,48 @@
     "ssdTrainingRatio": 0.8,
     "ssdSeed": 1337,
     "testOnLargerValues": true,
+    "eftdTrain": {
+      "datasetSmartName": "hotel_1_train",
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
+    "eftdTest": {
+      "datasetSmartName": "hotel_1_test",
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
     "kfold": false,
     "nFolds": 5,
     "instanceIdRefresher": 0,
@@ -1229,7 +1271,7 @@
       "leaf_size": 30
     },
     "logistic_regression": {
-      "enabled": false,
+      "enabled": true,
       "multi_class": "ovr",
       "l1": false,
       "l2": true,
@@ -1543,54 +1585,54 @@
         "pluginVersion": "1.0.0",
         "elementId": "model-lightgbm_classification",
         "name": "LightGBM Classification",
-        "enabled": false,
+        "enabled": true,
         "params": {
           "boosting_type": [
             "gbdt"
           ],
           "num_leaves": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "max_depth": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "learning_rate": [
             0.2
           ],
           "n_estimators": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "early_stopping": false,
-          "early_stopping_rounds": 4.0,
+          "early_stopping_rounds": 4,
           "min_split_gain": [
-            0.0
+            0
           ],
           "min_child_weight": [
             0.001
           ],
           "min_child_samples": [
-            20.0
+            20
           ],
           "subsample": [
-            1.0
+            1
           ],
           "subsample_freq": [
-            0.0
+            0
           ],
           "colsample_bytree": [
-            1.0
+            1
           ],
           "reg_alpha": [
-            0.0
+            0
           ],
           "reg_lambda": [
-            0.0
+            0
           ],
-          "random_state": 1337.0,
-          "n_jobs": 4.0
+          "random_state": 1337,
+          "n_jobs": 4
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false
@@ -1642,7 +1684,7 @@
     "custom_mllib": [],
     "max_ensemble_nodes_serialized": 6000,
     "lars_params": {
-      "enabled": false,
+      "enabled": true,
       "max_features": 0,
       "K": 100
     }
