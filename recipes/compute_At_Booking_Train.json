@@ -33,7 +33,7 @@
     "form_output_train": {
       "items": [
         {
-          "ref": "At_Booking_Train",
+          "ref": "hotel_1_train",
           "appendMode": false
         }
       ]
@@ -41,18 +41,18 @@
     "form_output_test": {
       "items": [
         {
-          "ref": "At_Booking_Test",
+          "ref": "hotel_1_test",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577401640572
+    "lastModifiedOn": 1577401680483
   },
   "creationTag": {
     "versionNumber": 0,
