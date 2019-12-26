@@ -116,14 +116,6 @@
                 "type": "date"
               },
               {
-                "name": "Days_to_Cancel_from_Book",
-                "type": "bigint"
-              },
-              {
-                "name": "Cancellation_Date",
-                "type": "date"
-              },
-              {
                 "name": "Planned_Arrival_Date",
                 "type": "date"
               },
@@ -141,10 +133,6 @@
               },
               {
                 "name": "Planned_Arrival_DoW",
-                "type": "bigint"
-              },
-              {
-                "name": "Days_to_Cancel_from_Arrival",
                 "type": "bigint"
               },
               {
@@ -166,14 +154,6 @@
               {
                 "name": "Planned_Departure_DoW",
                 "type": "bigint"
-              },
-              {
-                "name": "Arrival_Date",
-                "type": "date"
-              },
-              {
-                "name": "Departure_Date",
-                "type": "date"
               },
               {
                 "name": "Stay_in_Weekend_Nights",
@@ -275,14 +255,6 @@
               {
                 "name": "Special_Request_Cnt",
                 "type": "bigint"
-              },
-              {
-                "name": "Reservation_Status",
-                "type": "string"
-              },
-              {
-                "name": "Reservation_Status_Date",
-                "type": "date"
               },
               {
                 "name": "Total_Kids",

@@ -11,7 +11,7 @@
     "main": {
       "items": [
         {
-          "ref": "Hotel_Cancellation_Prepared",
+          "ref": "Hotel_Cancellation_Known_at_Booking",
           "deps": []
         }
       ]
@@ -36,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577098621075
+    "lastModifiedOn": 1577401597622
   },
   "creationTag": {
     "versionNumber": 0,
