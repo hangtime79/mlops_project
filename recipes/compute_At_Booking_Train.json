@@ -1,0 +1,63 @@
+{
+  "type": "CustomCode_split-on-outcome",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {},
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "form_origin_dataset": {
+      "items": [
+        {
+          "ref": "Hotel_Cancellation_Known_at_Booking",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "form_output_train": {
+      "items": [
+        {
+          "ref": "At_Booking_Train",
+          "appendMode": false
+        }
+      ]
+    },
+    "form_output_test": {
+      "items": [
+        {
+          "ref": "At_Booking_Test",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "gcase"
+    },
+    "lastModifiedOn": 1577401520005
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "gcase"
+    },
+    "lastModifiedOn": 1577401520005
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
