@@ -2,11 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {
-    "Meal": {
-      "meaning": "Text"
-    }
-  },
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -30,19 +25,48 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Reservation_Status_Date",
+          "Reservation_Status",
+          "Departure_Date",
+          "Arrival_Date",
+          "Days_to_Cancel_from_Arrival",
+          "Cancellation_Date",
+          "Days_to_Cancel_from_Book"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {
+    "Meal": {
+      "meaning": "Text"
+    }
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
