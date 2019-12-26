@@ -38,6 +38,7 @@
     "ssdSeed": 1337,
     "testOnLargerValues": true,
     "eftdTrain": {
+      "datasetSmartName": "Hotel_1_Train",
       "selection": {
         "useMemTable": false,
         "filter": {
