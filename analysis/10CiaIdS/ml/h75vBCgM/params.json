@@ -1695,7 +1695,7 @@
       "customEvaluationMetricNeedsProba": false,
       "thresholdOptimizationMetric": "F1",
       "costMatrixWeights": {
-        "tpGain": 1.0,
+        "tpGain": 0.0,
         "tnGain": 0.0,
         "fpGain": -0.3,
         "fnGain": 0.0
