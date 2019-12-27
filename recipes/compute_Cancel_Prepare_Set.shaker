@@ -203,13 +203,103 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "if (ADR \u003d\u003d 0, 1, 0)",
         "column": "Zero_ADR_Ind"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnCopier",
+      "params": {
+        "outputColumn": "Country_copy",
+        "inputColumn": "Country"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "Country_copy"
+        ],
+        "values": [
+          "PRT"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "CLEAR_CELL",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "Country_copy"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "1"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnBadType",
+      "params": {
+        "booleanMode": "AND",
+        "columns": [
+          "Country_copy"
+        ],
+        "action": "CLEAR_CELL",
+        "appliesTo": "SINGLE_COLUMN",
+        "type": "LongMeaning"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "Country_copy"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "Country_copy",
+            "to": "Country_PRT_Ind"
+          }
+        ]
       },
       "alwaysShowComment": false
     }
