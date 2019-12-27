@@ -1698,7 +1698,7 @@
         "tpGain": 0.0,
         "tnGain": 0.0,
         "fpGain": -0.3,
-        "fnGain": 0.0
+        "fnGain": 1.0
       },
       "liftPoint": 0.4
     },
