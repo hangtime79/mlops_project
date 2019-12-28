@@ -33,11 +33,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577517259291
+    "lastModifiedOn": 1577521691974
   },
   "creationTag": {
     "versionNumber": 0,
@@ -69,7 +69,8 @@
       },
       {
         "name": "Is_Canceled",
-        "type": "bigint"
+        "type": "bigint",
+        "meaning": "LongMeaning"
       },
       {
         "name": "Lead_Time",
