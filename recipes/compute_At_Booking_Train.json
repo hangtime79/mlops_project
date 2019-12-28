@@ -24,7 +24,13 @@
       "items": [
         {
           "ref": "Hotel_1",
-          "deps": []
+          "deps": [
+            {
+              "idim": "Country_PRT_Ind",
+              "func": "all_available",
+              "params": {}
+            }
+          ]
         }
       ]
     }
@@ -48,11 +54,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577405472013
+    "lastModifiedOn": 1577514458978
   },
   "creationTag": {
     "versionNumber": 0,
