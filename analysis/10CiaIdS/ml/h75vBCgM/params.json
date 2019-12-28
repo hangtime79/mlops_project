@@ -1444,7 +1444,7 @@
       "min_std_dev": 0.001
     },
     "xgboost": {
-      "enabled": true,
+      "enabled": false,
       "max_depth": [
         1,
         2,
