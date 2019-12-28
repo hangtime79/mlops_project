@@ -33,8 +33,8 @@
       "customEvaluationMetricGIB": true,
       "costMatrixWeights": {
         "fpGain": -0.3,
-        "tpGain": 1.0,
-        "fnGain": 0.0,
+        "tpGain": 0.0,
+        "fnGain": -1.0,
         "tnGain": 0.0
       },
       "liftPoint": 0.4,
@@ -59,7 +59,7 @@
     "algorithm": "RANDOM_FOREST_CLASSIFICATION",
     "gridLength": 12
   },
-  "generatingModelId": "A-HOTELCANCELLATIONMODELMONITORING-10CiaIdS-h75vBCgM-s2-pp1-m1",
+  "generatingModelId": "A-HOTELCANCELLATIONMODELMONITORING-10CiaIdS-h75vBCgM-s5-pp1-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -476,7 +476,7 @@
       "Booking_Date": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "INPUT",
+        "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -602,7 +602,7 @@
       "Planned_Departure_Date": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "INPUT",
+        "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -788,7 +788,7 @@
       "Planned_Arrival_Date": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "INPUT",
+        "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -935,7 +935,7 @@
       "Country": {
         "min_samples": 10,
         "missing_impute_with": "MODE",
-        "role": "INPUT",
+        "role": "REJECT",
         "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
@@ -1284,13 +1284,9 @@
     "userModified": false
   },
   "script": {
+    "contextProjectKey": "HOTELCANCELLATIONMODELMONITORING",
     "columnsSelection": {
       "mode": "ALL"
-    },
-    "analysisColumnData": {
-      "Meal": {
-        "meaning": "Text"
-      }
     },
     "explorationSampling": {
       "_refreshTrigger": 0,
@@ -1315,20 +1311,25 @@
       "autoRefreshSample": false
     },
     "explorationFilters": [],
-    "sorting": [],
     "exploreUIParams": {},
-    "globalSearchQuery": "",
-    "coloring": {
-      "scheme": "MEANING_AND_STATUS",
-      "individualColumns": [],
-      "valueColoringMode": "HASH"
-    },
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "previewMode": "ALL_ROWS",
     "vizSampling": {
       "_refreshTrigger": 0,
       "autoRefreshSample": false
+    },
+    "analysisColumnData": {
+      "Meal": {
+        "meaning": "Text"
+      }
+    },
+    "sorting": [],
+    "globalSearchQuery": "",
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
     }
   },
   "core": {
@@ -1435,7 +1436,7 @@
         "partitionSelectionMethod": "ALL",
         "targetRatio": 0.02,
         "maxReadUncompressedBytes": -1,
-        "samplingMethod": "HEAD_SEQUENTIAL"
+        "samplingMethod": "FULL"
       }
     },
     "testOnLargerValues": true,
