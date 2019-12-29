@@ -14,7 +14,7 @@
   },
   "tutorialProject": false,
   "settings": {
-    "flowAnchorSourcesAndSinks": true,
+    "flowAnchorSourcesAndSinks": false,
     "gitCommitMode": "AUTO",
     "disableAutomaticTriggers": false,
     "integrations": {
@@ -164,11 +164,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576460333784
+    "lastModifiedOn": 1577593663478
   },
   "creationTag": {
     "versionNumber": 0,
@@ -180,10 +180,10 @@
   "shortDesc": "The project *Hotel Cancellation (Model Monitoring)* was created by Grant Case on Dec 13th 2019",
   "tags": [],
   "customFields": {
-    "gdpr_forbid_dataset_sharing": false,
     "gdpr_forbid_dataset_export": false,
+    "gdpr_forbid_uploaded_datasets": false,
     "gdpr_forbid_model_creation": false,
-    "gdpr_forbid_uploaded_datasets": false
+    "gdpr_forbid_dataset_sharing": false
   },
   "checklists": {
     "checklists": [
