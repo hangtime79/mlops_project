@@ -5,9 +5,10 @@
   "params": {
     "customConfig": {
       "form_split_percentage": 70,
-      "form_seed_val": 456789,
+      "form_seed_val": 45678,
       "form_bln_targetColumn": true,
-      "form_target_col_is_factor": true
+      "form_target_col_is_factor": true,
+      "form_target_col": "Is_Canceled"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -47,11 +48,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577588859414
+    "lastModifiedOn": 1577588879762
   },
   "creationTag": {
     "versionNumber": 0,
