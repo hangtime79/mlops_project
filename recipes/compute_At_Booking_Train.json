@@ -39,26 +39,26 @@
     "form_output_train": {
       "items": [
         {
-          "ref": "hotel_1_train",
-          "appendMode": true
+          "ref": "hotel_1_train_set",
+          "appendMode": false
         }
       ]
     },
     "form_output_test": {
       "items": [
         {
-          "ref": "hotel_1_test",
+          "ref": "hotel_1_test_set",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577588657250
+    "lastModifiedOn": 1577588934867
   },
   "creationTag": {
     "versionNumber": 0,
