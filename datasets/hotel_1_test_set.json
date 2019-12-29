@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577588887896
+    "lastModifiedOn": 1577588888542
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,11 +72,11 @@
       },
       {
         "name": "Booking_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Planned_Arrival_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Planned_Arrival_Yr",
@@ -96,7 +96,7 @@
       },
       {
         "name": "Planned_Departure_Date",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "Planned_Departure_Yr",
@@ -140,7 +140,8 @@
       },
       {
         "name": "Meal",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "Country",
@@ -243,7 +244,7 @@
         "type": "bigint"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "metrics": {
     "probes": [
