@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577588451840
+    "lastModifiedOn": 1577588981416
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,8 +64,7 @@
       },
       {
         "name": "Is_Canceled",
-        "type": "bigint",
-        "meaning": "LongMeaning"
+        "type": "bigint"
       },
       {
         "name": "Lead_Time",
@@ -73,11 +72,11 @@
       },
       {
         "name": "Booking_Date",
-        "type": "date"
+        "type": "string"
       },
       {
         "name": "Planned_Arrival_Date",
-        "type": "date"
+        "type": "string"
       },
       {
         "name": "Planned_Arrival_Yr",
@@ -97,7 +96,7 @@
       },
       {
         "name": "Planned_Departure_Date",
-        "type": "date"
+        "type": "string"
       },
       {
         "name": "Planned_Departure_Yr",
@@ -141,8 +140,7 @@
       },
       {
         "name": "Meal",
-        "type": "string",
-        "meaning": "Text"
+        "type": "string"
       },
       {
         "name": "Country",
@@ -245,7 +243,7 @@
         "type": "bigint"
       }
     ],
-    "userModified": true
+    "userModified": false
   },
   "metrics": {
     "probes": [
