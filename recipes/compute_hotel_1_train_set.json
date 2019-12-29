@@ -3,7 +3,12 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "form_split_percentage": 70,
+      "form_seed_val": 456789,
+      "form_bln_targetColumn": true,
+      "form_target_col_is_factor": true
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -42,11 +47,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577588857210
+    "lastModifiedOn": 1577588859414
   },
   "creationTag": {
     "versionNumber": 0,
