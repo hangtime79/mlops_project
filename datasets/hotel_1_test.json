@@ -25,19 +25,14 @@
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
-    "dimensions": [
-      {
-        "name": "Country_PRT_Ind",
-        "type": "value"
-      }
-    ]
+    "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577593834509
+    "lastModifiedOn": 1578213919892
   },
   "creationTag": {
     "versionNumber": 0,
