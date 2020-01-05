@@ -25,19 +25,14 @@
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
-    "dimensions": [
-      {
-        "name": "Country_PRT_Ind",
-        "type": "value"
-      }
-    ]
+    "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577593931239
+    "lastModifiedOn": 1578213886028
   },
   "creationTag": {
     "versionNumber": 0,
@@ -53,6 +48,7 @@
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",
+    "explicitPartitionsList": "",
     "normalizeDoubles": true,
     "table": "${projectKey}_hotel_1",
     "tableCreationMode": "auto",
