@@ -24,15 +24,7 @@
       "items": [
         {
           "ref": "Hotel_1",
-          "deps": [
-            {
-              "out": "hotel_1_train",
-              "idim": "Country_PRT_Ind",
-              "odim": "Country_PRT_Ind",
-              "func": "equals",
-              "params": {}
-            }
-          ]
+          "deps": []
         }
       ]
     }
@@ -56,11 +48,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577593931270
+    "lastModifiedOn": 1578213933994
   },
   "creationTag": {
     "versionNumber": 0,
