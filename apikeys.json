@@ -60,5 +60,36 @@
     "key": "rIetObinahbmr6VSlS4Lilo4yqHtxESg",
     "label": "Key for Web app Plugin skin(5L0L0vw)",
     "createdOn": 1578345499099
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": true,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    "onBehalf": "kyuujf6",
+    "id": "Gcddg7Et6JuL6ulp",
+    "key": "r0VNNOWay1NFRR462KInvoZnBb02VbGI",
+    "label": "Key for Web app Plugin skin(kyuujf6)",
+    "createdOn": 1578346412439
   }
 ]
