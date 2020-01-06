@@ -21,8 +21,7 @@
             {
               "out": "hotel_1_scoring",
               "idim": "Country_PRT_Ind",
-              "odim": "Country_PRT_Ind",
-              "func": "equals",
+              "func": "all_available",
               "params": {}
             }
           ]
@@ -37,8 +36,7 @@
             {
               "out": "hotel_1_scoring",
               "idim": "Country_PRT_Ind",
-              "odim": "Country_PRT_Ind",
-              "func": "equals",
+              "func": "all_available",
               "params": {}
             }
           ]
@@ -65,11 +63,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578301346726
+    "lastModifiedOn": 1578301393224
   },
   "creationTag": {
     "versionNumber": 0,
