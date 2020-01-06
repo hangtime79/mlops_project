@@ -33,11 +33,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578283042468
+    "lastModifiedOn": 1578304724162
   },
   "creationTag": {
     "versionNumber": 0,
@@ -154,7 +154,8 @@
       },
       {
         "name": "Country_PRT_Ind",
-        "type": "bigint"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "Market_Segment",
