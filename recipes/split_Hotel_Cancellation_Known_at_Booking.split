@@ -103,11 +103,11 @@
               "operator": "\u003d\u003d [number]"
             },
             {
-              "input": "Country_PRT_Ind",
+              "input": "Domestic_Guest_Ind",
               "col": "Is_Canceled",
               "string": "TRUE",
               "num": 0,
-              "operator": "\u003d\u003d [string]"
+              "operator": "true"
             }
           ]
         },
@@ -204,9 +204,8 @@
                 "type": "string"
               },
               {
-                "meaning": "Text",
-                "name": "Country_PRT_Ind",
-                "type": "string"
+                "name": "Domestic_Guest_Ind",
+                "type": "boolean"
               },
               {
                 "name": "Market_Segment",
@@ -324,11 +323,11 @@
               "operator": "\u003d\u003d [number]"
             },
             {
-              "input": "Country_PRT_Ind",
+              "input": "Domestic_Guest_Ind",
               "col": "Is_Canceled",
               "string": "FALSE",
               "num": 0,
-              "operator": "\u003d\u003d [string]"
+              "operator": "false"
             }
           ]
         },
@@ -425,9 +424,8 @@
                 "type": "string"
               },
               {
-                "meaning": "Text",
-                "name": "Country_PRT_Ind",
-                "type": "string"
+                "name": "Domestic_Guest_Ind",
+                "type": "boolean"
               },
               {
                 "name": "Market_Segment",
@@ -544,11 +542,11 @@
               "operator": "\u003d\u003d [number]"
             },
             {
-              "input": "Country_PRT_Ind",
+              "input": "Domestic_Guest_Ind",
               "col": "Is_Canceled",
               "string": "TRUE",
               "num": 0,
-              "operator": "\u003d\u003d [string]"
+              "operator": "true"
             }
           ]
         },
@@ -645,9 +643,8 @@
                 "type": "string"
               },
               {
-                "meaning": "Text",
-                "name": "Country_PRT_Ind",
-                "type": "string"
+                "name": "Domestic_Guest_Ind",
+                "type": "boolean"
               },
               {
                 "name": "Market_Segment",
@@ -764,11 +761,11 @@
               "operator": "\u003d\u003d [number]"
             },
             {
-              "input": "Country_PRT_Ind",
+              "input": "Domestic_Guest_Ind",
               "col": "Is_Canceled",
               "string": "FALSE",
               "num": 0,
-              "operator": "\u003d\u003d [string]"
+              "operator": "false"
             }
           ]
         },
@@ -865,9 +862,8 @@
                 "type": "string"
               },
               {
-                "meaning": "Text",
-                "name": "Country_PRT_Ind",
-                "type": "string"
+                "name": "Domestic_Guest_Ind",
+                "type": "boolean"
               },
               {
                 "name": "Market_Segment",
