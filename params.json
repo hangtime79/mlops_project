@@ -107,7 +107,8 @@
       }
     }
   },
-  "name": "Copy of Hotel Cancellation (MLOps)",
+  "name": "Hotel Cancellation (MLOps)",
+  "imgPattern": 5,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -163,11 +164,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578312579236
+    "lastModifiedOn": 1578312605036
   },
   "creationTag": {
     "versionNumber": 0,
@@ -176,7 +177,7 @@
     },
     "lastModifiedOn": 1576232419260
   },
-  "shortDesc": "The project *Hotel Cancellation (Model Monitoring)* was created by Grant Case on Dec 13th 2019\nThe project *HOTELCANCELLATIONMLOPS* was copied from *HOTELCANCELLATIONMODELMONITORING* by Grant Case on Jan 06th 2020",
+  "shortDesc": "The project *Hotel Cancellation (MLOps)* was created by Grant Case on Dec 13th 2019",
   "tags": [
     "duplicated"
   ],
