@@ -1261,7 +1261,7 @@
       ]
     },
     "decision_tree_classification": {
-      "enabled": false,
+      "enabled": true,
       "max_depth": [
         5
       ],
@@ -1334,7 +1334,7 @@
       "leaf_size": 30
     },
     "logistic_regression": {
-      "enabled": false,
+      "enabled": true,
       "multi_class": "ovr",
       "l1": false,
       "l2": true,
@@ -1486,7 +1486,7 @@
       "min_std_dev": 0.001
     },
     "xgboost": {
-      "enabled": true,
+      "enabled": false,
       "max_depth": [
         1,
         2,
@@ -1747,7 +1747,7 @@
     "custom_mllib": [],
     "max_ensemble_nodes_serialized": 6000,
     "lars_params": {
-      "enabled": false,
+      "enabled": true,
       "max_features": 0,
       "K": 100
     }
