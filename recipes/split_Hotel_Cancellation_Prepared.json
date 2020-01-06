@@ -11,8 +11,16 @@
     "main": {
       "items": [
         {
-          "ref": "Hotel_Cancellation_Known_at_Booking",
-          "deps": []
+          "ref": "Cancellation_Partitioned",
+          "deps": [
+            {
+              "out": "Hotel_1",
+              "idim": "Country_PRT_Ind",
+              "odim": "Country_PRT_Ind",
+              "func": "equals",
+              "params": {}
+            }
+          ]
         }
       ]
     }
@@ -36,11 +44,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578269388456
+    "lastModifiedOn": 1578269780639
   },
   "creationTag": {
     "versionNumber": 0,
