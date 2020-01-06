@@ -30,7 +30,7 @@
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
-  "mode": "VALUES",
+  "mode": "FILTERS",
   "centileTDigest": false,
   "valueSplits": [
     {
@@ -39,7 +39,7 @@
       "value": 1
     },
     {
-      "outputIndex": 1,
+      "outputIndex": 0,
       "value": 2
     }
   ],
@@ -95,7 +95,21 @@
       "filter": {
         "uiData": {
           "mode": "\u0026\u0026",
-          "conditions": []
+          "conditions": [
+            {
+              "input": "Dataset",
+              "col": "Is_Canceled",
+              "num": 1,
+              "operator": "\u003d\u003d [number]"
+            },
+            {
+              "input": "Country_PRT_Ind",
+              "col": "Is_Canceled",
+              "string": "TRUE",
+              "num": 0,
+              "operator": "\u003d\u003d [string]"
+            }
+          ]
         },
         "$status": {
           "schema": {
@@ -287,12 +301,676 @@
                 "type": "bigint"
               }
             ]
-          }
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
         },
         "distinct": false,
         "enabled": true
       },
       "outputIndex": 0
+    },
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "Dataset",
+              "col": "Is_Canceled",
+              "num": 1,
+              "operator": "\u003d\u003d [number]"
+            },
+            {
+              "input": "Country_PRT_Ind",
+              "col": "Is_Canceled",
+              "string": "FALSE",
+              "num": 0,
+              "operator": "\u003d\u003d [string]"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "Dataset",
+                "type": "bigint"
+              },
+              {
+                "name": "Is_Canceled",
+                "type": "bigint"
+              },
+              {
+                "name": "Lead_Time",
+                "type": "bigint"
+              },
+              {
+                "name": "Booking_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Arrival_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Arrival_Yr",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_Mnth",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_Dy",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_DoW",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Departure_Yr",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Mnth",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Dy",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_DoW",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Weekend_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Week_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Adults",
+                "type": "bigint"
+              },
+              {
+                "name": "Children",
+                "type": "bigint"
+              },
+              {
+                "name": "Babies",
+                "type": "bigint"
+              },
+              {
+                "meaning": "Text",
+                "name": "Meal",
+                "type": "string"
+              },
+              {
+                "name": "Country",
+                "type": "string"
+              },
+              {
+                "meaning": "Text",
+                "name": "Country_PRT_Ind",
+                "type": "string"
+              },
+              {
+                "name": "Market_Segment",
+                "type": "string"
+              },
+              {
+                "name": "Distribution_Channel",
+                "type": "string"
+              },
+              {
+                "name": "Is_Repeated_Guest",
+                "type": "bigint"
+              },
+              {
+                "name": "Previous_Cancellations",
+                "type": "bigint"
+              },
+              {
+                "name": "Previous_Completed_Stays",
+                "type": "bigint"
+              },
+              {
+                "name": "Reserved_Room_Type",
+                "type": "string"
+              },
+              {
+                "name": "Assigned_Room_Type",
+                "type": "string"
+              },
+              {
+                "name": "Booking_Changes",
+                "type": "bigint"
+              },
+              {
+                "name": "Deposit_Type",
+                "type": "string"
+              },
+              {
+                "name": "Agent",
+                "type": "bigint"
+              },
+              {
+                "name": "Company",
+                "type": "bigint"
+              },
+              {
+                "name": "Days_in_Waiting_List",
+                "type": "bigint"
+              },
+              {
+                "name": "Customer_Type",
+                "type": "string"
+              },
+              {
+                "name": "ADR",
+                "type": "double"
+              },
+              {
+                "name": "Zero_ADR_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Parking_Spaces_Needed",
+                "type": "bigint"
+              },
+              {
+                "name": "Special_Request_Cnt",
+                "type": "bigint"
+              },
+              {
+                "name": "Total_Kids",
+                "type": "double"
+              },
+              {
+                "name": "Adults_Only_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Family_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Total_Size",
+                "type": "double"
+              },
+              {
+                "name": "Couple_Only_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Single_Only_Ind",
+                "type": "bigint"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "enabled": true
+      },
+      "outputIndex": 1
+    },
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "Dataset",
+              "col": "Is_Canceled",
+              "num": 2,
+              "operator": "\u003d\u003d [number]"
+            },
+            {
+              "input": "Country_PRT_Ind",
+              "col": "Is_Canceled",
+              "string": "TRUE",
+              "num": 0,
+              "operator": "\u003d\u003d [string]"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "Dataset",
+                "type": "bigint"
+              },
+              {
+                "name": "Is_Canceled",
+                "type": "bigint"
+              },
+              {
+                "name": "Lead_Time",
+                "type": "bigint"
+              },
+              {
+                "name": "Booking_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Arrival_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Arrival_Yr",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_Mnth",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_Dy",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_DoW",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Departure_Yr",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Mnth",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Dy",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_DoW",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Weekend_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Week_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Adults",
+                "type": "bigint"
+              },
+              {
+                "name": "Children",
+                "type": "bigint"
+              },
+              {
+                "name": "Babies",
+                "type": "bigint"
+              },
+              {
+                "meaning": "Text",
+                "name": "Meal",
+                "type": "string"
+              },
+              {
+                "name": "Country",
+                "type": "string"
+              },
+              {
+                "meaning": "Text",
+                "name": "Country_PRT_Ind",
+                "type": "string"
+              },
+              {
+                "name": "Market_Segment",
+                "type": "string"
+              },
+              {
+                "name": "Distribution_Channel",
+                "type": "string"
+              },
+              {
+                "name": "Is_Repeated_Guest",
+                "type": "bigint"
+              },
+              {
+                "name": "Previous_Cancellations",
+                "type": "bigint"
+              },
+              {
+                "name": "Previous_Completed_Stays",
+                "type": "bigint"
+              },
+              {
+                "name": "Reserved_Room_Type",
+                "type": "string"
+              },
+              {
+                "name": "Assigned_Room_Type",
+                "type": "string"
+              },
+              {
+                "name": "Booking_Changes",
+                "type": "bigint"
+              },
+              {
+                "name": "Deposit_Type",
+                "type": "string"
+              },
+              {
+                "name": "Agent",
+                "type": "bigint"
+              },
+              {
+                "name": "Company",
+                "type": "bigint"
+              },
+              {
+                "name": "Days_in_Waiting_List",
+                "type": "bigint"
+              },
+              {
+                "name": "Customer_Type",
+                "type": "string"
+              },
+              {
+                "name": "ADR",
+                "type": "double"
+              },
+              {
+                "name": "Zero_ADR_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Parking_Spaces_Needed",
+                "type": "bigint"
+              },
+              {
+                "name": "Special_Request_Cnt",
+                "type": "bigint"
+              },
+              {
+                "name": "Total_Kids",
+                "type": "double"
+              },
+              {
+                "name": "Adults_Only_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Family_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Total_Size",
+                "type": "double"
+              },
+              {
+                "name": "Couple_Only_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Single_Only_Ind",
+                "type": "bigint"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "enabled": true
+      },
+      "outputIndex": 2
+    },
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "Dataset",
+              "col": "Is_Canceled",
+              "num": 2,
+              "operator": "\u003d\u003d [number]"
+            },
+            {
+              "input": "Country_PRT_Ind",
+              "col": "Is_Canceled",
+              "string": "FALSE",
+              "num": 0,
+              "operator": "\u003d\u003d [string]"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "Dataset",
+                "type": "bigint"
+              },
+              {
+                "name": "Is_Canceled",
+                "type": "bigint"
+              },
+              {
+                "name": "Lead_Time",
+                "type": "bigint"
+              },
+              {
+                "name": "Booking_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Arrival_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Arrival_Yr",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_Mnth",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_Dy",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_DoW",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Departure_Yr",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Mnth",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Dy",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_DoW",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Weekend_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Week_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Adults",
+                "type": "bigint"
+              },
+              {
+                "name": "Children",
+                "type": "bigint"
+              },
+              {
+                "name": "Babies",
+                "type": "bigint"
+              },
+              {
+                "meaning": "Text",
+                "name": "Meal",
+                "type": "string"
+              },
+              {
+                "name": "Country",
+                "type": "string"
+              },
+              {
+                "meaning": "Text",
+                "name": "Country_PRT_Ind",
+                "type": "string"
+              },
+              {
+                "name": "Market_Segment",
+                "type": "string"
+              },
+              {
+                "name": "Distribution_Channel",
+                "type": "string"
+              },
+              {
+                "name": "Is_Repeated_Guest",
+                "type": "bigint"
+              },
+              {
+                "name": "Previous_Cancellations",
+                "type": "bigint"
+              },
+              {
+                "name": "Previous_Completed_Stays",
+                "type": "bigint"
+              },
+              {
+                "name": "Reserved_Room_Type",
+                "type": "string"
+              },
+              {
+                "name": "Assigned_Room_Type",
+                "type": "string"
+              },
+              {
+                "name": "Booking_Changes",
+                "type": "bigint"
+              },
+              {
+                "name": "Deposit_Type",
+                "type": "string"
+              },
+              {
+                "name": "Agent",
+                "type": "bigint"
+              },
+              {
+                "name": "Company",
+                "type": "bigint"
+              },
+              {
+                "name": "Days_in_Waiting_List",
+                "type": "bigint"
+              },
+              {
+                "name": "Customer_Type",
+                "type": "string"
+              },
+              {
+                "name": "ADR",
+                "type": "double"
+              },
+              {
+                "name": "Zero_ADR_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Parking_Spaces_Needed",
+                "type": "bigint"
+              },
+              {
+                "name": "Special_Request_Cnt",
+                "type": "bigint"
+              },
+              {
+                "name": "Total_Kids",
+                "type": "double"
+              },
+              {
+                "name": "Adults_Only_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Family_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Total_Size",
+                "type": "double"
+              },
+              {
+                "name": "Couple_Only_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Single_Only_Ind",
+                "type": "bigint"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "enabled": true
+      },
+      "outputIndex": 3
     }
   ]
 }

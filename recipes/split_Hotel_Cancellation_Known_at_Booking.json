@@ -21,22 +21,30 @@
     "main": {
       "items": [
         {
-          "ref": "hotel_1",
+          "ref": "hotel_1_domestic",
           "appendMode": false
         },
         {
-          "ref": "hotel_2",
+          "ref": "hotel_1_foreign",
+          "appendMode": false
+        },
+        {
+          "ref": "hotel_2_domestic",
+          "appendMode": false
+        },
+        {
+          "ref": "hotel_2_foreign",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578312199883
+    "lastModifiedOn": 1578312806163
   },
   "creationTag": {
     "versionNumber": 0,
