@@ -248,13 +248,22 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "FillEmptyWithValue",
+      "type": "FindReplace",
       "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "^(?!\\s*$).+",
+            "to": "F"
+          }
+        ],
+        "normalization": "EXACT",
         "columns": [
           "Country_copy"
         ],
         "appliesTo": "SINGLE_COLUMN",
-        "value": "1"
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
       },
       "alwaysShowComment": false
     },
@@ -262,34 +271,22 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "FilterOnBadType",
+      "type": "FindReplace",
       "params": {
-        "booleanMode": "AND",
-        "columns": [
-          "Country_copy"
-        ],
-        "action": "CLEAR_CELL",
-        "appliesTo": "SINGLE_COLUMN",
-        "type": "LongMeaning"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FillEmptyWithValue",
-      "params": {
+        "output": "",
+        "mapping": [],
+        "normalization": "EXACT",
         "columns": [
           "Country_copy"
         ],
         "appliesTo": "SINGLE_COLUMN",
-        "value": "0"
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
       },
       "alwaysShowComment": false
     },
     {
-      "preview": false,
+      "preview": true,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnRenamer",
