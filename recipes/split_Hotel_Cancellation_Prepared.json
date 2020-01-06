@@ -16,8 +16,7 @@
             {
               "out": "Hotel_1",
               "idim": "Country_PRT_Ind",
-              "odim": "Country_PRT_Ind",
-              "func": "equals",
+              "func": "all_available",
               "params": {}
             }
           ]
@@ -44,11 +43,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578269780639
+    "lastModifiedOn": 1578269802350
   },
   "creationTag": {
     "versionNumber": 0,
