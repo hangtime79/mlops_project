@@ -1,0 +1,70 @@
+{
+  "type": "evaluation",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "hotel_1_domestic",
+          "deps": []
+        }
+      ]
+    },
+    "model": {
+      "items": [
+        {
+          "ref": "xFnsuq4N",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "hotel_1_domestic_score",
+          "appendMode": false
+        }
+      ]
+    },
+    "metrics": {
+      "items": [
+        {
+          "ref": "hotel_1_domestic_metrics",
+          "appendMode": true
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "gcase"
+    },
+    "lastModifiedOn": 1578346375589
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "gcase"
+    },
+    "lastModifiedOn": 1578346375589
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
