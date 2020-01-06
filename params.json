@@ -108,7 +108,6 @@
     }
   },
   "name": "Hotel Cancellation (Model Monitoring)",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -164,11 +163,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1577593663478
+    "lastModifiedOn": 1578312576278
   },
   "creationTag": {
     "versionNumber": 0,
@@ -178,7 +177,9 @@
     "lastModifiedOn": 1576232419260
   },
   "shortDesc": "The project *Hotel Cancellation (Model Monitoring)* was created by Grant Case on Dec 13th 2019",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {
     "gdpr_forbid_dataset_export": false,
     "gdpr_forbid_uploaded_datasets": false,
