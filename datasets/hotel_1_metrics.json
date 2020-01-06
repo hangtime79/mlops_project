@@ -33,11 +33,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578305868084
+    "lastModifiedOn": 1578305870465
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,8 +64,52 @@
   "schema": {
     "columns": [
       {
-        "name": "Country_PRT_Ind",
-        "type": "string"
+        "name": "date",
+        "type": "date"
+      },
+      {
+        "name": "precision",
+        "type": "double"
+      },
+      {
+        "name": "recall",
+        "type": "double"
+      },
+      {
+        "name": "auc",
+        "type": "double"
+      },
+      {
+        "name": "f1",
+        "type": "double"
+      },
+      {
+        "name": "accuracy",
+        "type": "double"
+      },
+      {
+        "name": "mcc",
+        "type": "double"
+      },
+      {
+        "name": "hammingLoss",
+        "type": "double"
+      },
+      {
+        "name": "logLoss",
+        "type": "double"
+      },
+      {
+        "name": "lift",
+        "type": "double"
+      },
+      {
+        "name": "calibrationLoss",
+        "type": "double"
+      },
+      {
+        "name": "customScore",
+        "type": "double"
       }
     ],
     "userModified": true
