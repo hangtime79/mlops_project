@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578315151257
+    "lastModifiedOn": 1578315160917
   },
   "creationTag": {
     "versionNumber": 0,
@@ -249,6 +249,10 @@
       {
         "name": "proba_1",
         "type": "double"
+      },
+      {
+        "name": "proba_percentile",
+        "type": "tinyint"
       },
       {
         "name": "prediction",
