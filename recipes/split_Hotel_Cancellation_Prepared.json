@@ -14,7 +14,6 @@
           "ref": "Cancellation_Partitioned",
           "deps": [
             {
-              "out": "Hotel_1",
               "idim": "Country_PRT_Ind",
               "func": "all_available",
               "params": {}
@@ -43,11 +42,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578269865469
+    "lastModifiedOn": 1578269972629
   },
   "creationTag": {
     "versionNumber": 0,
