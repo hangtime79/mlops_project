@@ -3,37 +3,44 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": 2,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
   "rangeSetTime": false,
+  "column": "Dataset",
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "VALUES",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": 1
+    },
+    {
+      "outputIndex": 1,
+      "value": 2
     }
   ],
   "rangeSplits": [
@@ -89,6 +96,197 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "Dataset",
+                "type": "bigint"
+              },
+              {
+                "name": "Is_Canceled",
+                "type": "bigint"
+              },
+              {
+                "name": "Lead_Time",
+                "type": "bigint"
+              },
+              {
+                "name": "Booking_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Arrival_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Arrival_Yr",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_Mnth",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_Dy",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Arrival_DoW",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Date",
+                "type": "date"
+              },
+              {
+                "name": "Planned_Departure_Yr",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Mnth",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_Dy",
+                "type": "bigint"
+              },
+              {
+                "name": "Planned_Departure_DoW",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Weekend_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Week_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Stay_in_Nights",
+                "type": "bigint"
+              },
+              {
+                "name": "Adults",
+                "type": "bigint"
+              },
+              {
+                "name": "Children",
+                "type": "bigint"
+              },
+              {
+                "name": "Babies",
+                "type": "bigint"
+              },
+              {
+                "meaning": "Text",
+                "name": "Meal",
+                "type": "string"
+              },
+              {
+                "name": "Country",
+                "type": "string"
+              },
+              {
+                "name": "Country_PRT_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Market_Segment",
+                "type": "string"
+              },
+              {
+                "name": "Distribution_Channel",
+                "type": "string"
+              },
+              {
+                "name": "Is_Repeated_Guest",
+                "type": "bigint"
+              },
+              {
+                "name": "Previous_Cancellations",
+                "type": "bigint"
+              },
+              {
+                "name": "Previous_Completed_Stays",
+                "type": "bigint"
+              },
+              {
+                "name": "Reserved_Room_Type",
+                "type": "string"
+              },
+              {
+                "name": "Assigned_Room_Type",
+                "type": "string"
+              },
+              {
+                "name": "Booking_Changes",
+                "type": "bigint"
+              },
+              {
+                "name": "Deposit_Type",
+                "type": "string"
+              },
+              {
+                "name": "Agent",
+                "type": "bigint"
+              },
+              {
+                "name": "Company",
+                "type": "bigint"
+              },
+              {
+                "name": "Days_in_Waiting_List",
+                "type": "bigint"
+              },
+              {
+                "name": "Customer_Type",
+                "type": "string"
+              },
+              {
+                "name": "ADR",
+                "type": "double"
+              },
+              {
+                "name": "Zero_ADR_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Parking_Spaces_Needed",
+                "type": "bigint"
+              },
+              {
+                "name": "Special_Request_Cnt",
+                "type": "bigint"
+              },
+              {
+                "name": "Total_Kids",
+                "type": "double"
+              },
+              {
+                "name": "Adults_Only_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Family_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Total_Size",
+                "type": "double"
+              },
+              {
+                "name": "Couple_Only_Ind",
+                "type": "bigint"
+              },
+              {
+                "name": "Single_Only_Ind",
+                "type": "bigint"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
