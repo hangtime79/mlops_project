@@ -1,0 +1,63 @@
+{
+  "type": "CustomCode_split-on-outcome",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {},
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "inputs": {
+    "form_origin_dataset": {
+      "items": [
+        {
+          "ref": "hotel_2_domestic",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "form_output_train": {
+      "items": [
+        {
+          "ref": "hotel_2_domestic_train",
+          "appendMode": false
+        }
+      ]
+    },
+    "form_output_test": {
+      "items": [
+        {
+          "ref": "hotel_2_domestic_test",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "gcase"
+    },
+    "lastModifiedOn": 1578345202404
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "gcase"
+    },
+    "lastModifiedOn": 1578345202404
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
