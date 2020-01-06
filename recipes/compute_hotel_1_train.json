@@ -7,7 +7,8 @@
       "form_split_percentage": 70,
       "form_seed_val": 456789,
       "form_bln_targetColumn": true,
-      "form_target_col_is_factor": true
+      "form_target_col_is_factor": true,
+      "form_target_col": "Is_Canceled"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -47,11 +48,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578279812096
+    "lastModifiedOn": 1578279831412
   },
   "creationTag": {
     "versionNumber": 0,
