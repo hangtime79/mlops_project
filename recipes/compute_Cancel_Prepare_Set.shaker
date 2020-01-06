@@ -32,261 +32,307 @@
   "steps": [
     {
       "preview": false,
-      "metaType": "PROCESSOR",
+      "name": "Data Manipulation",
+      "metaType": "GROUP",
       "disabled": false,
-      "type": "DateDifference",
-      "params": {
-        "output": "Days_to_Cancel_from_Book",
-        "input2": "Cancellation_Date",
-        "outputUnit": "DAYS",
-        "input1": "Booking_Date",
-        "compareTo": "COLUMN",
-        "reverse": false
-      },
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateDifference",
+          "params": {
+            "output": "Days_to_Cancel_from_Book",
+            "input2": "Cancellation_Date",
+            "outputUnit": "DAYS",
+            "input1": "Booking_Date",
+            "compareTo": "COLUMN",
+            "reverse": false
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateDifference",
+          "params": {
+            "output": "Days_to_Cancel_from_Arrival",
+            "input2": "Cancellation_Date",
+            "outputUnit": "DAYS",
+            "input1": "Planned_Arrival_Date",
+            "compareTo": "COLUMN",
+            "reverse": true
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateComponentsExtractor",
+          "params": {
+            "outMonthColumn": "Planned_Arrival_Mnth",
+            "outYearColumn": "Planned_Arrival_Yr",
+            "column": "Planned_Arrival_Date",
+            "outDayOfWeekColumn": "Planned_Arrival_DoW",
+            "timezone_id": "UTC",
+            "outDayColumn": "Planned_Arrival_Dy"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateComponentsExtractor",
+          "params": {
+            "outMonthColumn": "Planned_Departure_Mnth",
+            "outYearColumn": "Planned_Departure_Yr",
+            "column": "Planned_Departure_Date",
+            "outDayOfWeekColumn": "Planned_Departure_DoW",
+            "timezone_id": "UTC",
+            "outDayColumn": "Planned_Departure_Dy"
+          },
+          "alwaysShowComment": false
+        }
+      ],
       "alwaysShowComment": false
     },
     {
       "preview": false,
-      "metaType": "PROCESSOR",
+      "name": "Family Size",
+      "metaType": "GROUP",
       "disabled": false,
-      "type": "DateDifference",
-      "params": {
-        "output": "Days_to_Cancel_from_Arrival",
-        "input2": "Cancellation_Date",
-        "outputUnit": "DAYS",
-        "input1": "Planned_Arrival_Date",
-        "compareTo": "COLUMN",
-        "reverse": true
-      },
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "NumericalCombinator",
+          "params": {
+            "add": true,
+            "div": false,
+            "sub": false,
+            "mul": false,
+            "prefix": "",
+            "columns": [
+              "Babies",
+              "Children"
+            ],
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnRenamer",
+          "params": {
+            "renamings": [
+              {
+                "from": "add_Babies_Children",
+                "to": "Total_Kids"
+              }
+            ]
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "NumericalCombinator",
+          "params": {
+            "add": true,
+            "div": false,
+            "sub": false,
+            "mul": false,
+            "prefix": "",
+            "columns": [
+              "Total_Kids",
+              "Adults"
+            ],
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnRenamer",
+          "params": {
+            "renamings": [
+              {
+                "from": "add_Total_Kids_Adults",
+                "to": "Total_Size"
+              }
+            ]
+          },
+          "alwaysShowComment": false
+        }
+      ],
       "alwaysShowComment": false
     },
     {
       "preview": false,
-      "metaType": "PROCESSOR",
+      "name": "Indicator Fields",
+      "metaType": "GROUP",
       "disabled": false,
-      "type": "DateComponentsExtractor",
-      "params": {
-        "outMonthColumn": "Planned_Arrival_Mnth",
-        "outYearColumn": "Planned_Arrival_Yr",
-        "column": "Planned_Arrival_Date",
-        "outDayOfWeekColumn": "Planned_Arrival_DoW",
-        "timezone_id": "UTC",
-        "outDayColumn": "Planned_Arrival_Dy"
-      },
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "if (Total_Kids \u003e 0, 1, 0)",
+            "column": "Family_Ind"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "if (Total_Kids \u003d\u003d 0, 1, 0)",
+            "column": "Adults_Only_Ind"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "if (Total_Size \u003d\u003d 1, 1, 0)",
+            "column": "Single_Only_Ind"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "if (and(Total_Size \u003d\u003d 2, Adults_Only_Ind \u003d\u003d 1), 1, 0)",
+            "column": "Couple_Only_Ind"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "if (ADR \u003d\u003d 0, 1, 0)",
+            "column": "Zero_ADR_Ind"
+          },
+          "alwaysShowComment": false
+        }
+      ],
       "alwaysShowComment": false
     },
     {
       "preview": false,
-      "metaType": "PROCESSOR",
+      "name": "Country Indicator",
+      "metaType": "GROUP",
       "disabled": false,
-      "type": "DateComponentsExtractor",
-      "params": {
-        "outMonthColumn": "Planned_Departure_Mnth",
-        "outYearColumn": "Planned_Departure_Yr",
-        "column": "Planned_Departure_Date",
-        "outDayOfWeekColumn": "Planned_Departure_DoW",
-        "timezone_id": "UTC",
-        "outDayColumn": "Planned_Departure_Dy"
-      },
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnCopier",
+          "params": {
+            "outputColumn": "Country_copy",
+            "inputColumn": "Country"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FillEmptyWithValue",
+          "params": {
+            "columns": [
+              "Country_copy"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "value": "F"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FilterOnValue",
+          "params": {
+            "normalizationMode": "EXACT",
+            "booleanMode": "AND",
+            "columns": [
+              "Country_copy"
+            ],
+            "values": [
+              "PRT"
+            ],
+            "matchingMode": "FULL_STRING",
+            "action": "CLEAR_CELL",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "mapping": [
+              {
+                "from": "^(?!\\s*$).+",
+                "to": "F"
+              }
+            ],
+            "normalization": "EXACT",
+            "columns": [
+              "Country_copy"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "PATTERN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FillEmptyWithValue",
+          "params": {
+            "columns": [
+              "Country_copy"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "value": "T"
+          },
+          "alwaysShowComment": false
+        }
+      ],
       "alwaysShowComment": false
     },
     {
       "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "NumericalCombinator",
-      "params": {
-        "add": true,
-        "div": false,
-        "sub": false,
-        "mul": false,
-        "prefix": "",
-        "columns": [
-          "Babies",
-          "Children"
-        ],
-        "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnRenamer",
-      "params": {
-        "renamings": [
-          {
-            "from": "add_Babies_Children",
-            "to": "Total_Kids"
-          }
-        ]
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "NumericalCombinator",
-      "params": {
-        "add": true,
-        "div": false,
-        "sub": false,
-        "mul": false,
-        "prefix": "",
-        "columns": [
-          "Total_Kids",
-          "Adults"
-        ],
-        "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnRenamer",
-      "params": {
-        "renamings": [
-          {
-            "from": "add_Total_Kids_Adults",
-            "to": "Total_Size"
-          }
-        ]
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "if (Total_Kids \u003e 0, 1, 0)",
-        "column": "Family_Ind"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "if (Total_Kids \u003d\u003d 0, 1, 0)",
-        "column": "Adults_Only_Ind"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "if (Total_Size \u003d\u003d 1, 1, 0)",
-        "column": "Single_Only_Ind"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "if (and(Total_Size \u003d\u003d 2, Adults_Only_Ind \u003d\u003d 1), 1, 0)",
-        "column": "Couple_Only_Ind"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "if (ADR \u003d\u003d 0, 1, 0)",
-        "column": "Zero_ADR_Ind"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnCopier",
-      "params": {
-        "outputColumn": "Country_copy",
-        "inputColumn": "Country"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FilterOnValue",
-      "params": {
-        "normalizationMode": "EXACT",
-        "booleanMode": "AND",
-        "columns": [
-          "Country_copy"
-        ],
-        "values": [
-          "PRT"
-        ],
-        "matchingMode": "FULL_STRING",
-        "action": "CLEAR_CELL",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FindReplace",
-      "params": {
-        "output": "",
-        "mapping": [
-          {
-            "from": "^(?!\\s*$).+",
-            "to": "F"
-          }
-        ],
-        "normalization": "EXACT",
-        "columns": [
-          "Country_copy"
-        ],
-        "appliesTo": "SINGLE_COLUMN",
-        "stopAfterFirstMatch": false,
-        "matching": "PATTERN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "FindReplace",
-      "params": {
-        "output": "",
-        "mapping": [],
-        "normalization": "EXACT",
-        "columns": [
-          "Country_copy"
-        ],
-        "appliesTo": "SINGLE_COLUMN",
-        "stopAfterFirstMatch": false,
-        "matching": "SUBSTRING"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": true,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnRenamer",
