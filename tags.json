@@ -8,6 +8,9 @@
     },
     "recipe-editor": {
       "color": "#1ac2ab"
-    }
+    },
+    "modeling": {},
+    "monitoring": {},
+    "mlops": {}
   }
 }
