@@ -337,7 +337,7 @@
             "renamings": [
               {
                 "from": "Country_copy",
-                "to": "Country_PRT_Ind"
+                "to": "Domestic_Guest_Ind"
               }
             ]
           },
