@@ -33,11 +33,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578305870465
+    "lastModifiedOn": 1578305885869
   },
   "creationTag": {
     "versionNumber": 0,
@@ -110,6 +110,10 @@
       {
         "name": "customScore",
         "type": "double"
+      },
+      {
+        "name": "Country_PRT_Ind",
+        "type": "string"
       }
     ],
     "userModified": true
