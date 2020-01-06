@@ -25,19 +25,14 @@
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
-    "dimensions": [
-      {
-        "name": "Country_PRT_Ind",
-        "type": "value"
-      }
-    ]
+    "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578270154042
+    "lastModifiedOn": 1578276753234
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,7 +51,7 @@
     "explicitPartitionsList": "",
     "normalizeDoubles": true,
     "table": "${projectKey}_hotel_1",
-    "tableCreationMode": "custom",
+    "tableCreationMode": "auto",
     "customCreateStatement": "CREATE TABLE \"HOTELCANCELLATIONMODELMONITORING_hotel_1\" (\n\t\"Dataset\" bigint,\n\t\"Is_Canceled\" bigint,\n\t\"Lead_Time\" bigint,\n\t\"Booking_Date\" timestamptz,\n\t\"Planned_Arrival_Date\" timestamptz,\n\t\"Planned_Arrival_Yr\" bigint,\n\t\"Planned_Arrival_Mnth\" bigint,\n\t\"Planned_Arrival_Dy\" bigint,\n\t\"Planned_Arrival_DoW\" bigint,\n\t\"Planned_Departure_Date\" timestamptz,\n\t\"Planned_Departure_Yr\" bigint,\n\t\"Planned_Departure_Mnth\" bigint,\n\t\"Planned_Departure_Dy\" bigint,\n\t\"Planned_Departure_DoW\" bigint,\n\t\"Stay_in_Weekend_Nights\" bigint,\n\t\"Stay_in_Week_Nights\" bigint,\n\t\"Stay_in_Nights\" bigint,\n\t\"Adults\" bigint,\n\t\"Children\" bigint,\n\t\"Babies\" bigint,\n\t\"Meal\" text,\n\t\"Country\" text,\n\t\"Country_PRT_Ind\" bigint,\n\t\"Market_Segment\" text,\n\t\"Distribution_Channel\" text,\n\t\"Is_Repeated_Guest\" bigint,\n\t\"Previous_Cancellations\" bigint,\n\t\"Previous_Completed_Stays\" bigint,\n\t\"Reserved_Room_Type\" text,\n\t\"Assigned_Room_Type\" text,\n\t\"Booking_Changes\" bigint,\n\t\"Deposit_Type\" text,\n\t\"Agent\" bigint,\n\t\"Company\" bigint,\n\t\"Days_in_Waiting_List\" bigint,\n\t\"Customer_Type\" text,\n\t\"ADR\" double precision,\n\t\"Zero_ADR_Ind\" bigint,\n\t\"Parking_Spaces_Needed\" bigint,\n\t\"Special_Request_Cnt\" bigint,\n\t\"Total_Kids\" double precision,\n\t\"Adults_Only_Ind\" bigint,\n\t\"Family_Ind\" bigint,\n\t\"Total_Size\" double precision,\n\t\"Couple_Only_Ind\" bigint,\n\t\"Single_Only_Ind\" bigint\n)",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
