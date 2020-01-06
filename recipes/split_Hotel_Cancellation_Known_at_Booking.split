@@ -190,8 +190,9 @@
                 "type": "string"
               },
               {
+                "meaning": "Text",
                 "name": "Country_PRT_Ind",
-                "type": "bigint"
+                "type": "string"
               },
               {
                 "name": "Market_Segment",
