@@ -60,36 +60,5 @@
     "key": "rIetObinahbmr6VSlS4Lilo4yqHtxESg",
     "label": "Key for Web app Plugin skin(5L0L0vw)",
     "createdOn": 1578345499099
-  },
-  {
-    "execSQLLike": false,
-    "localDatasets": [
-      {
-        "datasets": [],
-        "privileges": [
-          "READ_DATA",
-          "READ_METADATA",
-          "READ_SCHEMA"
-        ]
-      }
-    ],
-    "projectPrivileges": {
-      "admin": false,
-      "readProjectContent": true,
-      "writeProjectContent": false,
-      "exportDatasetsData": false,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false
-    },
-    "onBehalf": "PR7vrgb",
-    "id": "S4OBXnlD7E3aQy79",
-    "key": "ajBffxQmwsXo3fxXrYaNouMFONSNLfXA",
-    "label": "Key for Web app Plugin skin(PR7vrgb)",
-    "createdOn": 1578346699212
   }
 ]
