@@ -29,16 +29,4831 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "Domestic_Guest_Ind",
+          "type": "CATEGORICAL"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": false,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "Is_Canceled",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Lead_Time",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Booking_Date",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Planned_Arrival_Date",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Planned_Arrival_Yr",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Arrival_Mnth",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Arrival_Dy",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Arrival_DoW",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Departure_Date",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Planned_Departure_Yr",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Departure_Mnth",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Departure_Dy",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Departure_DoW",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Stay_in_Weekend_Nights",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Stay_in_Week_Nights",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Stay_in_Nights",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Adults",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Children",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Babies",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Meal",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Country",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Market_Segment",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Distribution_Channel",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Is_Repeated_Guest",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Previous_Cancellations",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Previous_Completed_Stays",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Reserved_Room_Type",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Assigned_Room_Type",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Booking_Changes",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Deposit_Type",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Agent",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Company",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Days_in_Waiting_List",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Customer_Type",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "ADR",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Zero_ADR_Ind",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Parking_Spaces_Needed",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Special_Request_Cnt",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Total_Kids",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Adults_Only_Ind",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Family_Ind",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Total_Size",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Couple_Only_Ind",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Single_Only_Ind",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Is_Canceled",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Is_Canceled",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ZRIzhD4"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Is_Canceled",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Ls3vPkX"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Is_Canceled",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "HrNRe0I"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Is_Canceled",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "6SNDVbm"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Is_Canceled",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "BrruLAk"
+              }
+            ],
+            "id": "3ym9HOr"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Lead_Time",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Lead_Time",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "LCwdUtn"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Lead_Time",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "QtNxtUj"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Lead_Time",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "G7s9h8S"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Lead_Time",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "tfh3WO7"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Lead_Time",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "7Ha068F"
+              }
+            ],
+            "id": "joxg5AC"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Booking_Date",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Booking_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "dQrNG9p"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Booking_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "4crlfGK"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Booking_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "T4OQSsr"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Booking_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "oma9nwF"
+              }
+            ],
+            "id": "dsC2mgx"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Planned_Arrival_Date",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "CIgB6xp"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "TFeWHJx"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Planned_Arrival_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "tNoqvKi"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "3KCVzjg"
+              }
+            ],
+            "id": "IhFtKqt"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Planned_Arrival_Yr",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Yr",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "R8PwfDV"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Yr",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "HeupWdw"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Yr",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "McFqkmu"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Planned_Arrival_Yr",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "XbmUFvk"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Yr",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "I6naMR8"
+              }
+            ],
+            "id": "Sf4I5ur"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Planned_Arrival_Mnth",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Mnth",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "4igqqZc"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Mnth",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "RjqR6lv"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Mnth",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "pjLfxfl"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Planned_Arrival_Mnth",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "VpP9gQ4"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Mnth",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "mGebhL2"
+              }
+            ],
+            "id": "a9TBgHW"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Planned_Arrival_Dy",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Dy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Hp5Yuas"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Dy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "guNKg2d"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Dy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "adfPC6w"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Planned_Arrival_Dy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ZTXIMrl"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_Dy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "8jx9fsz"
+              }
+            ],
+            "id": "8dnQGKh"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Planned_Arrival_DoW",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_DoW",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Xkt6inL"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_DoW",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "XZx9TWC"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_DoW",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "wFEnJqr"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Planned_Arrival_DoW",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "vCeeMQZ"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Arrival_DoW",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "RhJKJMI"
+              }
+            ],
+            "id": "cHYzF0Q"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Planned_Departure_Date",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "zn65pgK"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ThIDpyo"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Planned_Departure_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "iZTV6BO"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "NfWHP05"
+              }
+            ],
+            "id": "3QVJV8I"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Planned_Departure_Yr",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Yr",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "hIU2nSE"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Yr",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "KPpFwM9"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Yr",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "esZtiuQ"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Planned_Departure_Yr",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "VHqdjzv"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Yr",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "M0K9i0W"
+              }
+            ],
+            "id": "Q7ogpeg"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Planned_Departure_Mnth",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Mnth",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "dCQCON0"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Mnth",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "100y32c"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Mnth",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "j8vnmdj"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Planned_Departure_Mnth",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "DEO1D32"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Mnth",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "6OA6cvS"
+              }
+            ],
+            "id": "m5UDrZI"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Planned_Departure_Dy",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Dy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "BOLm9Dr"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Dy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "XccHkXH"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Dy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "oHU4tIW"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Planned_Departure_Dy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "S3Uqr71"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_Dy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "NKZOmAc"
+              }
+            ],
+            "id": "YwMF49X"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Planned_Departure_DoW",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_DoW",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "pGygY42"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_DoW",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "cpEWPRg"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_DoW",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "w7q3Rob"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Planned_Departure_DoW",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ZuO7LVa"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Planned_Departure_DoW",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "HQJktn6"
+              }
+            ],
+            "id": "zvMGiah"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Stay_in_Weekend_Nights",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Weekend_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "VIxL7e3"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Weekend_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "f3gsI1t"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Weekend_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "2sgPrQr"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Stay_in_Weekend_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "aYYnLFA"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Weekend_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "8pkIsAm"
+              }
+            ],
+            "id": "lihvqzu"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Stay_in_Week_Nights",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Week_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "1Hi8Z2D"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Week_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "pMyvXWl"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Week_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "50eM772"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Stay_in_Week_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "LPWsCz6"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Week_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "qMnE0Yt"
+              }
+            ],
+            "id": "YTVOdPS"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Stay_in_Nights",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "2xG3D8j"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "7XNHkZF"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "mbeLyES"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Stay_in_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "iXTFjSM"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Stay_in_Nights",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "mE8C2lU"
+              }
+            ],
+            "id": "y7vh0Fu"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Adults",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Adults",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "TOBlm2l"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Adults",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "xsikid2"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Adults",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "95s7R7A"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Adults",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "HQaI5Sf"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Adults",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "XpXnf2a"
+              }
+            ],
+            "id": "vBNg5WA"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Children",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Children",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "hxConMJ"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Children",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "HXrRP1L"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Children",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "SrEuT4M"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Children",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "rF7Qt3e"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Children",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "G1n8J3U"
+              }
+            ],
+            "id": "eyEPH3a"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Babies",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Babies",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "y6v8cNy"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Babies",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "KVnjAyu"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Babies",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "b74rGSX"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Babies",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "agqo96u"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Babies",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "6YAo6mj"
+              }
+            ],
+            "id": "WZR20XG"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Meal",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Meal",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "7sLrQVJ"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Meal",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "MzFLL0c"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Meal",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ij9ef2s"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Meal",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Pv6RBwz"
+              }
+            ],
+            "id": "nSUWDz5"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Country",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Country",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "WQJSRT6"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Country",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "rEpZ4Zi"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Country",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "V8xxV7w"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Country",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "2f4I0E8"
+              }
+            ],
+            "id": "8WmCGyh"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Market_Segment",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Market_Segment",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "6goYrlU"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Market_Segment",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "PON371i"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Market_Segment",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "LeLag5Z"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Market_Segment",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "RhaTy8p"
+              }
+            ],
+            "id": "YrtUSWJ"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Distribution_Channel",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Distribution_Channel",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "cpH6azU"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Distribution_Channel",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "o6utboP"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Distribution_Channel",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "q85gbnB"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Distribution_Channel",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "pvg9JC3"
+              }
+            ],
+            "id": "B8vHbHo"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Is_Repeated_Guest",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Is_Repeated_Guest",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "61nTCKA"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Is_Repeated_Guest",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "MEl0c72"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Is_Repeated_Guest",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "BAMfN77"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Is_Repeated_Guest",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "X5arTdt"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Is_Repeated_Guest",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "QteI2JK"
+              }
+            ],
+            "id": "lqhUiid"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Previous_Cancellations",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Previous_Cancellations",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "IqsAscf"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Previous_Cancellations",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "cn3MLoa"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Previous_Cancellations",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "KYxQYpI"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Previous_Cancellations",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "THUAecU"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Previous_Cancellations",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "XJg46Y7"
+              }
+            ],
+            "id": "vAHNuoD"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Previous_Completed_Stays",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Previous_Completed_Stays",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ApoCZWT"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Previous_Completed_Stays",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "1ROmRqR"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Previous_Completed_Stays",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Sh81SMR"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Previous_Completed_Stays",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "YDIgdTy"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Previous_Completed_Stays",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "wfO8vSc"
+              }
+            ],
+            "id": "u8L7Kvk"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Reserved_Room_Type",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Reserved_Room_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "MxzMwzM"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Reserved_Room_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "9TBZ6VC"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Reserved_Room_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "tiDo33K"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Reserved_Room_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "xm9R6tr"
+              }
+            ],
+            "id": "8SOlgjb"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Assigned_Room_Type",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Assigned_Room_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "yMsz3q9"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Assigned_Room_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "IKXesJA"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Assigned_Room_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "copZLmt"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Assigned_Room_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "FISWtZn"
+              }
+            ],
+            "id": "oHzxXCM"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Booking_Changes",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Booking_Changes",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ounmKyr"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Booking_Changes",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "22WEKsy"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Booking_Changes",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "78WPwZT"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Booking_Changes",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Ek7CEtx"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Booking_Changes",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "S3ybCzC"
+              }
+            ],
+            "id": "7RwZtvR"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Deposit_Type",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Deposit_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "toIvc4X"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Deposit_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "jpJoq4D"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Deposit_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "6MUDsXh"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Deposit_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Uk5xaKf"
+              }
+            ],
+            "id": "AA18ODD"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Agent",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Agent",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "W2kLzhs"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Agent",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "a6TCcev"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Agent",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "6wgFGZo"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Agent",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "uhW96vc"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Agent",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "7a0iV66"
+              }
+            ],
+            "id": "pk73mrF"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Company",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Company",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "IfM4y0q"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Company",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "DduXk4L"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Company",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "TU4AvT8"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Company",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "9Vfbfqg"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Company",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "CKV6ZaV"
+              }
+            ],
+            "id": "M1bkA2a"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Days_in_Waiting_List",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Days_in_Waiting_List",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "w4jmDbW"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Days_in_Waiting_List",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "oegM4uB"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Days_in_Waiting_List",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "w3XlCPm"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Days_in_Waiting_List",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "achbp0w"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Days_in_Waiting_List",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "PhRAta6"
+              }
+            ],
+            "id": "8RIjkka"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Customer_Type",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Customer_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ng2LgmG"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Customer_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "GFBg3Km"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Customer_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "vTgyZDZ"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Customer_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "IsVrMZS"
+              }
+            ],
+            "id": "kduFeq3"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "ADR",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "ADR",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "97GHr0T"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "ADR",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Dge1IHa"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "ADR",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "v41NTYV"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "ADR",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "DypFIaE"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "ADR",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Y3vDBOq"
+              }
+            ],
+            "id": "NnU4gys"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Zero_ADR_Ind",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Zero_ADR_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "zjTL1Aw"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Zero_ADR_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ky1E1YR"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Zero_ADR_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "RIU2CSq"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Zero_ADR_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "zXZFhg2"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Zero_ADR_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "NnJjKGi"
+              }
+            ],
+            "id": "sqOze86"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Parking_Spaces_Needed",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Parking_Spaces_Needed",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "6Z4lq4M"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Parking_Spaces_Needed",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "WRN17XN"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Parking_Spaces_Needed",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "49qCzdB"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Parking_Spaces_Needed",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "x1gI1gU"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Parking_Spaces_Needed",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "adAscMM"
+              }
+            ],
+            "id": "1qmWy0L"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Special_Request_Cnt",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Special_Request_Cnt",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "DCPLBNl"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Special_Request_Cnt",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "47AlGjV"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Special_Request_Cnt",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Amc6YiZ"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Special_Request_Cnt",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Mx1gbR8"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Special_Request_Cnt",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "yIl8429"
+              }
+            ],
+            "id": "nmX02gP"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Total_Kids",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Total_Kids",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "k8ozErc"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Total_Kids",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "e36Zvs1"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Total_Kids",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Up9SAqT"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Total_Kids",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Bmsaasd"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Total_Kids",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "rC2rJGd"
+              }
+            ],
+            "id": "kYf4Cdw"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Adults_Only_Ind",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Adults_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "hJujn8c"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Adults_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "v9uvCHm"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Adults_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "epzoqSR"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Adults_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "SKKNxpn"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Adults_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "AWnxkyy"
+              }
+            ],
+            "id": "0KOHHxy"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Family_Ind",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Family_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "INwzN27"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Family_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "p709oni"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Family_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "6XFDIIU"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Family_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "itggVbS"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Family_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "8MlMnGp"
+              }
+            ],
+            "id": "BioEBAL"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Total_Size",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Total_Size",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "YC1xXkL"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Total_Size",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "UzfoYXO"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Total_Size",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "uGi0TpM"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Total_Size",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "xEooa3F"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Total_Size",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "RuquPA2"
+              }
+            ],
+            "id": "myJ15Ze"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Couple_Only_Ind",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Couple_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "tiwafCZ"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Couple_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "J8c9UBQ"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Couple_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "xaPG5mU"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Couple_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "pBLf4vk"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Couple_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "2p1d9zS"
+              }
+            ],
+            "id": "0i9yHZA"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Single_Only_Ind",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Single_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "FM4A3Mp"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Single_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "xfRspj9"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Single_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "UwiRaO6"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Single_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "C8hGN2I"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Single_Only_Ind",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Domestic_Guest_Ind",
+                  "type": "CATEGORICAL"
+                },
+                "id": "iiRzH7b"
+              }
+            ],
+            "id": "0Pc46sq"
+          }
+        ],
+        "id": "0EahI1V"
+      }
+    ],
     "id": "CVEDKtw"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1585363788638
+    "lastModifiedOn": 1585363816922
   },
   "creationTag": {
     "versionNumber": 0,
