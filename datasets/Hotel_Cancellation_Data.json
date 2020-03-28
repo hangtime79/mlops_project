@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1576232694025
+    "lastModifiedOn": 1585364716314
   },
   "creationTag": {
     "versionNumber": 0,
@@ -142,7 +142,8 @@
       },
       {
         "name": "Is_Repeated_Guest",
-        "type": "bigint"
+        "type": "bigint",
+        "meaning": "Text"
       },
       {
         "name": "Previous_Cancellations",
