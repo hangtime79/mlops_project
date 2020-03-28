@@ -4843,17 +4843,162 @@
           }
         ],
         "id": "0EahI1V"
+      },
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": false,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0
+        },
+        "metric": "SPEARMAN",
+        "columns": [
+          {
+            "name": "Is_Canceled",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Lead_Time",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Arrival_Yr",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Arrival_Mnth",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Arrival_Dy",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Arrival_DoW",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Departure_Yr",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Departure_Mnth",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Departure_Dy",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Planned_Departure_DoW",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Stay_in_Weekend_Nights",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Stay_in_Week_Nights",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Stay_in_Nights",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Adults",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Children",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Babies",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Is_Repeated_Guest",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Previous_Cancellations",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Previous_Completed_Stays",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Booking_Changes",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Agent",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Company",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Days_in_Waiting_List",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "ADR",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Zero_ADR_Ind",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Parking_Spaces_Needed",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Special_Request_Cnt",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Total_Kids",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Adults_Only_Ind",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Family_Ind",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Total_Size",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Couple_Only_Ind",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Single_Only_Ind",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "dosiMeo"
       }
     ],
     "id": "CVEDKtw"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1585363816922
+    "lastModifiedOn": 1585364844597
   },
   "creationTag": {
     "versionNumber": 0,
