@@ -118,11 +118,18 @@
         "containerSelection": {
           "containerMode": "INHERIT"
         },
+        "overrideGlobalK8sExposition": false,
         "exposition": {
           "type": "local_process",
           "params": {}
         },
-        "nbReplicas": 1
+        "scaling": {
+          "initialReplicas": 1,
+          "hpa": false,
+          "hpaTargetCPUPercent": 0,
+          "hpaMinPods": 0,
+          "hpaMaxPods": 0
+        }
       }
     }
   },
@@ -184,11 +191,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1578345297769
+    "lastModifiedOn": 1585363682599
   },
   "creationTag": {
     "versionNumber": 0,
