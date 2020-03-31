@@ -1998,7 +1998,7 @@
         "pluginVersion": "1.0.0",
         "elementId": "model-lightgbm_classification",
         "name": "LightGBM Classification",
-        "enabled": false,
+        "enabled": true,
         "params": {
           "num_leaves": [
             50,
