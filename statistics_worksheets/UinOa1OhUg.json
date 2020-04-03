@@ -979,7 +979,7 @@
                 "type": "bivariate_histogram",
                 "xBinningMode": "AUTO",
                 "yBinningMode": "AUTO",
-                "maxValuesX": 5,
+                "maxValuesX": 7,
                 "maxValuesY": 5,
                 "groupWithOthersX": true,
                 "groupWithOthersY": true,
@@ -4994,11 +4994,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1585364941969
+    "lastModifiedOn": 1585880364273
   },
   "creationTag": {
     "versionNumber": 0,
