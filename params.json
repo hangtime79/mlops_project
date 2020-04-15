@@ -135,7 +135,6 @@
     }
   },
   "name": "Hotel Cancellation (MLOps)",
-  "projectStatus": "Sandbox",
   "imgPattern": 5,
   "metrics": {
     "probes": [],
@@ -192,11 +191,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1586910297277
+    "lastModifiedOn": 1586914797054
   },
   "creationTag": {
     "versionNumber": 0,
@@ -209,7 +208,8 @@
   "tags": [
     "modeling",
     "monitoring",
-    "mlops"
+    "mlops",
+    "duplicated"
   ],
   "customFields": {
     "gdpr_forbid_dataset_export": false,
