@@ -2,7 +2,7 @@
 library(dataiku)
 
 # Recipe inputs
-hotel_2_domestic_train <- dkuReadDataset("hotel_2_domestic_train", samplingMethod="all")
+hotel_2_domestic_train <- dkuReadDataset("hotel_2_domestic_train", samplingMethod="full")
 
 # Compute recipe outputs from inputs
 # TODO: Replace this part by your actual code that computes the output, as a R dataframe or data table
