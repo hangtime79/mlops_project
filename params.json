@@ -43,7 +43,7 @@
     "flowBuildSettings": {
       "mergeSparkPipelines": false,
       "pruneBeforeSparkPipelines": true,
-      "mergeSqlPipelines": false,
+      "mergeSqlPipelines": true,
       "pruneBeforeSqlPipelines": true
     },
     "limitsSettings": {
@@ -73,7 +73,7 @@
       "python": {
         "useBuiltinEnv": false,
         "preventOverride": false,
-        "envName": "Mainline27"
+        "envName": "Mainline36"
       },
       "r": {
         "useBuiltinEnv": false,
@@ -134,8 +134,7 @@
       }
     }
   },
-  "name": "Hotel Cancellation (MLOps)",
-  "projectStatus": "Sandbox",
+  "name": "Hotel Cancellation (MLOps) (v2)",
   "imgPattern": 5,
   "metrics": {
     "probes": [],
@@ -192,11 +191,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "gcase"
     },
-    "lastModifiedOn": 1586910297277
+    "lastModifiedOn": 1586914888338
   },
   "creationTag": {
     "versionNumber": 0,
@@ -205,11 +204,12 @@
     },
     "lastModifiedOn": 1576232419260
   },
-  "shortDesc": "The project *Hotel Cancellation (MLOps)* was created by Grant Case on Dec 13th 2019",
+  "shortDesc": "The project *Hotel Cancellation (MLOps)* was created by Grant Case on Dec 13th 2019\nThe project *MLOPS_V2* was copied from *HOTELCANCELLATIONMLOPS* by Grant Case on Apr 14th 2020",
   "tags": [
     "modeling",
     "monitoring",
-    "mlops"
+    "mlops",
+    "duplicated"
   ],
   "customFields": {
     "gdpr_forbid_dataset_export": false,
