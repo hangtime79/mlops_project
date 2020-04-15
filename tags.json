@@ -3,14 +3,20 @@
     "duplicated": {
       "color": "#3A85AD"
     },
-    "mlops": {},
+    "mlops": {
+      "color": "#de1ea5"
+    },
     "deleted-recipe-editor": {
       "color": "#90a8b7"
     },
-    "modeling": {},
+    "modeling": {
+      "color": "#94be8e"
+    },
     "recipe-editor": {
       "color": "#1ac2ab"
     },
-    "monitoring": {}
+    "monitoring": {
+      "color": "#d66b9b"
+    }
   }
 }
